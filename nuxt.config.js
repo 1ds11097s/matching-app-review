@@ -15,7 +15,7 @@ export default {
       { name:'google-site-verification', content:'3x2pyGudFz4PTex6t_oE6E1qmiunf0bsbcrgH-5TuFs'}
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon(1).ico' }
     ]
   },
 
@@ -44,7 +44,7 @@ export default {
       '@nuxtjs/google-gtag',
       {
         id: 'UA-104918236-3', //あなたのGoogleアナリティクスのプロパティID
-        debug: false //本番環境以外でもGAを有効にしたい場合はtrueに。
+        debug: true //本番環境以外でもGAを有効にしたい場合はtrueに。
       }
     ]
   ],
