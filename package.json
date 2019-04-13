@@ -12,6 +12,7 @@
   },
   "dependencies": {
     "@nuxtjs/google-analytics": "^2.2.0",
+    "@nuxtjs/google-gtag": "^1.0.4",
     "cross-env": "^5.2.0",
     "nuxt": "^2.4.0",
     "vue-markdown": "^2.2.4"
