@@ -1,7 +1,7 @@
 {
   "name": "review",
   "version": "1.0.0",
-  "description": "test",
+  "description": "YYCやwith、omialやハッピーメールのマッチングアプリを実際に使ってみて会えるアプリ、会えないアプリを紹介します！",
   "author": "大坪 裕二",
   "private": true,
   "scripts": {
