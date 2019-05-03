@@ -11,8 +11,9 @@ export default {
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: 'YYCやwith、omialやハッピーメールのマッチングアプリを実際に使ってみて会えるアプリ、会えないアプリを紹介します！' },
-      { name:'google-site-verification', content:'3x2pyGudFz4PTex6t_oE6E1qmiunf0bsbcrgH-5TuFs'}
+      { hid: 'description', name: 'description', content: 'YYCやwith、omial、Pairs、ハッピーメールなどのマッチングアプリを実際に使ってみた体験談を元に会えるアプリ、会えないアプリを紹介します！' },
+      { name: 'google-site-verification', content:'3x2pyGudFz4PTex6t_oE6E1qmiunf0bsbcrgH-5TuFs'},
+      { name: 'keywords', content: 'マッチングアプリ,YYC,with,Omiai,Pairs'},
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
