@@ -2,12 +2,18 @@
 main.container
   h3.subsubtitle ～マッチングアプリOmiaiの紹介と使用してみた感想～
   .main_img
-    img(src="../../static/main.png", alt="メイン画像")
+    no-ssr
+      lazy-component
+        img(src="../../static/main.png", alt="メイン画像")
   .app_info1
     b Omiaiってどんなアプリ？
   .info1
-    img(src="../../static/logo.png", alt="Omiaiロゴ画像")
-    img(src="../../static/media.png", alt="メディア紹介")
+    no-ssr
+      lazy-component
+        img(src="../../static/logo.png", alt="Omiaiロゴ画像")
+    no-ssr
+      lazy-component
+        img(src="../../static/media.png", alt="メディア紹介")
     blockquote
       p Omiai（オミアイ）は日本初のFacebookを利用した安心・安全なマッチングサービスです。
       p これまでのオンラインデーティングサービスは誰が登録しているかわからず、不安がつきまといました。
@@ -22,12 +28,24 @@ main.container
   .app_info2
     b なぜOmiaiが安全・安心なのか？
     .info2
-      img(src="../../static/secure1.png", alt="安全・安心の理由1")
-      img(src="../../static/secure2.png", alt="安全・安心の理由2")
-      img(src="../../static/secure3.png", alt="安全・安心の理由3")
-      img(src="../../static/secure4.png", alt="安全・安心の理由4")
-      img(src="../../static/secure5.png", alt="安全・安心の理由5")
-      img(src="../../static/secure6.png", alt="安全・安心の理由6")
+      no-ssr
+        lazy-component
+          img(src="../../static/secure1.png", alt="安全・安心の理由1")
+      no-ssr
+        lazy-component
+          img(src="../../static/secure2.png", alt="安全・安心の理由2")
+      no-ssr
+        lazy-component
+          img(src="../../static/secure3.png", alt="安全・安心の理由3")
+      no-ssr
+        lazy-component
+          img(src="../../static/secure4.png", alt="安全・安心の理由4")
+      no-ssr
+        lazy-component
+          img(src="../../static/secure5.png", alt="安全・安心の理由5")
+      no-ssr
+        lazy-component
+          img(src="../../static/secure6.png", alt="安全・安心の理由6")
   .add_info2 
     span Omiaiは以下の点で安全・安心の理由を挙げています。
     ul
@@ -127,9 +145,15 @@ main.container
   .app_info3 
     b Omiaiをやろうと思うけどどれぐらい料金がかかるの？
     .info3
-      img(src="../../static/payment1.png", alt="料金について1",class="scale_image")
-      img(src="../../static/payment2.png", alt="料金について2",class="scale_image")
-      img(src="../../static/payment3.png", alt="料金について3")
+      no-ssr
+        lazy-component
+          img(src="../../static/payment1.png", alt="料金について1",class="scale_image")
+      no-ssr
+        lazy-component
+          img(src="../../static/payment2.png", alt="料金について2",class="scale_image")
+      no-ssr
+        lazy-component
+          img(src="../../static/payment3.png", alt="料金について3")
   .add_info3
     p 基本的には男性が有料、女性が無料となっています。
     p 料金については上の画像の通りですが、
@@ -149,7 +173,9 @@ main.container
       a(href="#",class="btn-square-shadow") Omiaiを始める
     span.plan2.plan ・プレミアムパックについて
     .plan2_info
-      img(src="../../static/payment1.png", alt="料金について2",height="300px")
+      no-ssr
+        lazy-component
+          img(src="../../static/payment1.png", alt="料金について2",height="300px")
       .plan2_info1 プレミアムパックとは購入すると通常の有料会員に比べて2.2倍マッチング率が高くなるサービスのことです。<br>
         | プレミアムパックを購入すると以下のサービスが使えるようになります。
       .plan2_wrapper  
@@ -162,7 +188,9 @@ main.container
             p ・登録日を絞って検索 - 登録した日から女性を絞って検索することができます。
             p ・メッセージできる検索 - 年齢確認が済んでいるやり取りの可能な女性を表示することができます。
             p ・お相手のいいね数検索 - いいね！の数がいくつの範囲かを絞って検索することができます。
-          img(src="../../static/plan2_info2.png", alt="検索イメージ",height="300px")
+          no-ssr
+            lazy-component  
+              img(src="../../static/plan2_info2.png", alt="検索イメージ",height="300px")
       .plan2_wrapper    
         .plan2_info3
           .description
@@ -171,7 +199,9 @@ main.container
             p 相手が自分のプロフィールを表示した際に詳細なプロフィールを見ることができます。
             p 詳細プロフィールが設定されているアイコンが表示されるので相手から自分のプロフィールを見てもらいやすくなります。
             p 通常の有料会員より多くの情報を載せることができるのでその分女性からも自分のことを知ってもらいやすくなり<br>いいねやマッチングの数が上がりやすくなります。
-          img(src="../../static/plan2_info3.png", alt="詳細プロフィールイメージ",height="300px")
+          no-ssr
+            lazy-component  
+              img(src="../../static/plan2_info3.png", alt="詳細プロフィールイメージ",height="300px")
       .plan2_wrapper    
         .plan2_info4 つぶやきphotoの利用が可能
           p TwitterやInstagramのように画像を投稿してコメントを載せることができます。
@@ -222,7 +252,9 @@ main.container
         | 購入する場合はよく考えてからすることをおすすめします笑 
     span.plan3.plan ・Omiaiポイントについて
       .plan3_info
-        img(src="../../static/payment2.png", alt="料金について2",height="300px")
+        no-ssr
+          lazy-component
+            img(src="../../static/payment2.png", alt="料金について2",height="300px")
         .plan3_info1 Omiaiポイントとは通常の有料会員が使える機能にさらに追加してマッチングしやすくなる機能を使うためのポイントです。<br>
           | Omiaiポイントで使える機能には以下があります。
         .plan3_info2 いいね！が送れる
