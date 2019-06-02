@@ -54,7 +54,7 @@ main.container
   .start_with
     a(href="https://t.afi-b.com/visit.php?guid=ON&a=Y9306j-J315373G&p=s687592m" target="_blank" rel="nofollow")
       img(src="https://www.afi-b.com/upload_image/9306-1519773417-3.gif" width="468" height="60" style="border:none;" alt="with（ウィズ）")
-    img(src="https://t.afi-b.com/lead/Y9306j/s687592m/J315373G" width="1" height="1" style="border:none;")
+    img(src="https://t.afi-b.com/lead/Y9306j/s687592m/J315373G" width="1" height="1" style="border:none;" alt="with（ウィズ）")
   .app_info2
     b なぜwithが安全・安心なのか？
     .info2
@@ -107,7 +107,7 @@ main.container
   .start_with
     a(href="https://t.afi-b.com/visit.php?guid=ON&a=Y9306j-J315373G&p=s687592m" target="_blank" rel="nofollow")
       img(src="https://www.afi-b.com/upload_image/9306-1519773417-3.gif" width="468" height="60" style="border:none;" alt="with（ウィズ）")
-    img(src="https://t.afi-b.com/lead/Y9306j/s687592m/J315373G" width="1" height="1" style="border:none;")    
+    img(src="https://t.afi-b.com/lead/Y9306j/s687592m/J315373G" width="1" height="1" style="border:none;" alt="with（ウィズ）")    
   .app_info4
     b withを使った他ユーザーのレビュー
   .add_info4
@@ -208,7 +208,7 @@ main.container
   .start_with
     a(href="https://t.afi-b.com/visit.php?guid=ON&a=Y9306j-J315373G&p=s687592m" target="_blank" rel="nofollow")
       img(src="https://www.afi-b.com/upload_image/9306-1519773417-3.gif" width="468" height="60" style="border:none;" alt="with（ウィズ）")
-    img(src="https://t.afi-b.com/lead/Y9306j/s687592m/J315373G" width="1" height="1" style="border:none;")
+    img(src="https://t.afi-b.com/lead/Y9306j/s687592m/J315373G" width="1" height="1" style="border:none;" alt="with（ウィズ）")
   .app_info3 
     b withをやろうと思うけどどれぐらい料金がかかるの？
     .info3
@@ -286,12 +286,11 @@ main.container
   .start_with
     a(href="https://t.afi-b.com/visit.php?guid=ON&a=Y9306j-J315373G&p=s687592m" target="_blank" rel="nofollow")
       img(src="https://www.afi-b.com/upload_image/9306-1519773417-3.gif" width="468" height="60" style="border:none;" alt="with（ウィズ）")
-    img(src="https://t.afi-b.com/lead/Y9306j/s687592m/J315373G" width="1" height="1" style="border:none;")    
+    img(src="https://t.afi-b.com/lead/Y9306j/s687592m/J315373G" width="1" height="1" style="border:none;" alt="with（ウィズ）")    
   
 </template>
 
 <script>
-import Card from '~/components/card.vue'
 import Vue from 'vue'
 import VueYoutube from 'vue-youtube'
 
@@ -302,9 +301,6 @@ export default {
    
   },
   data () {
-    return {
-      videoId: 'aGlEbsvxVtM',
-    }
   },
   created () {
   },
