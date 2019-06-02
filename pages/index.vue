@@ -26,27 +26,27 @@
       li: a(href="#process") 管理人は今アプリでどれぐらい会えているのか！？
       li 実際に出会えたアプリ紹介
         ul
-          li pairs
-          li ハッピーメール
+          li pairs(更新準備中)
+          li ハッピーメール(更新準備中)
           li 
             nuxt-link(to="categories/with") with 
       li まだ出会えていないけど会えそうなアプリ紹介
         ul
-          li: a(href="/yyc") YYC
+          li YYC(更新準備中)
           li
             nuxt-link(to="categories/Omiai") Omiai
-      li あまり出会えなさそうなアプリ紹介
-        ul
-          li タップる誕生
-          li クロスミー
-          li poiboy
-          li pcmax
-      li 絶対に出会えないアプリ紹介
-        ul
-          li SF
-          li そくでき
-          li ももちゃ
-          li 夜フレ
+      //- li あまり出会えなさそうなアプリ紹介
+      //-   ul
+      //-     li タップる誕生
+      //-     li クロスミー
+      //-     li poiboy
+      //-     li pcmax
+      //- li 絶対に出会えないアプリ紹介
+      //-   ul
+      //-     li SF
+      //-     li そくでき
+      //-     li ももちゃ
+      //-     li 夜フレ
     h2: a(name="profile") 管理人の自己紹介
     p 改めて自己紹介させていただきます、管理人のゆうです！
       br
@@ -90,7 +90,7 @@
     p 使ってみて思ったことはアプリごとに特徴があって、中々やりとりして会うまでは大変だなーということです。
     p もちろん相手を選ばないなら必然的に数は増えると思いますが過去の経験があるので少し慎重になっています笑
     p 
-      b ※2019/05/02更新
+      b ※2019/06/02更新
     table.main_table
       tbody
         tr
@@ -101,22 +101,22 @@
         tr
           td.icon.yyc: a(href="http://www.yyc.co.jp/af/9112cb3b/") YYC
           td 0
-          td 3ヶ月程
+          td 5ヶ月程
           td -
         tr
           td.icon.omiai Omiai
           td 0
-          td 3ヶ月程
+          td 5ヶ月程
           td -
         tr
           td.icon.with with
-          td 0
-          td 3ヶ月程
-          td -
+          td 1
+          td 5ヶ月程
+          td B
         tr
           td.icon.pairs Pairs
           td 1
-          td 3ヶ月程
+          td 5ヶ月程
           td B
         tr
           td.icon.happymail: a(href="http://happymail.co.jp/?af20275164", rel="nofollow") ハッピーメール
