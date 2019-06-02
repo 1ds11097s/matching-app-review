@@ -7,7 +7,6 @@ export default {
   ** Headers of the page
   */
   head: {
-    title: 'マッチングアプリを実際に使ってのレビュー、本当に会えるの？',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },

@@ -374,6 +374,11 @@ main.container
 import Card from '~/components/card.vue'
 
 export default {
+  head () {
+    return {
+      title: 'マッチングアプリOmiaiを実際に使ってのレビュー、本当に会えるの？',
+    }
+  },
   components: {
    
   },

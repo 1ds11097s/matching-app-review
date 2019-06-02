@@ -84,7 +84,7 @@ main.container
       li 悪質なユーザーの監視体制が万全
       li 上場企業が運営
   .app_info2
-    b withはキャンペーン・イベントが特徴的です
+    b withはイベントの豊富さが特徴的です
     .info2
       no-ssr
         lazy-component
@@ -314,14 +314,11 @@ import Vue from 'vue'
 export default {
   head () {
     return {
+      title: 'マッチングアプリwithを実際に使ってのレビュー、本当に会えるの？',
     }
   },
   components: {
    
-  },
-  data () {
-  },
-  created () {
   },
   methods: {
     something() {
@@ -435,6 +432,9 @@ export default {
   }
   .with_logo_not_pc,.secure_not_pc,.payment_not_pc {
     padding-right:0px !important;
+  }
+  .secure_not_pc {
+    margin: 5px;
   }
   .payment_not_pc {
     height:auto !important;
@@ -566,6 +566,7 @@ export default {
   }
   .start_with {
     width:500px;
+    max-width:86%;
     height:70px;
     position: relative;
     text-align:center;
@@ -584,6 +585,7 @@ export default {
       height: 100%;
       img {
         padding-top: 13px;
+        max-width:100%;
       }
     }
   }
