@@ -43,7 +43,7 @@ h1, h2, h3 {
   text-align: center;
 }
 .page_subtitle_not_pc {
-  font-size:21px;
+  font-size:20px;
 }
 .page_title_not_pc {
   font-size:22px;
