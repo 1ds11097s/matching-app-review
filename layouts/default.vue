@@ -9,6 +9,7 @@
     nuxt
 </template>
 <script>
+import Vue from 'vue'
 export default {
   methods: {
     something() {
