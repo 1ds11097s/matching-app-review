@@ -43,6 +43,7 @@ export default {
   */
   modules: [
     [
+      'nuxt-user-agent',
       '@nuxtjs/google-gtag',
       {
         id: 'UA-104918236-3', //あなたのGoogleアナリティクスのプロパティID

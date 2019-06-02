@@ -4,16 +4,19 @@ main.container
   .main_img
     no-ssr
       lazy-component
-        img(src="../../static/main.png", alt="メイン画像")
-  .app_info1
+        img(src="../../static/omiai/main.png", alt="メイン画像")
+  .app_info1(v-if="$ua.deviceType() !== 'pc'", class="about_omiai_not_pc")
+    b Omiaiってどんなアプリ？
+  .app_info1(v-else-if="$ua.deviceType() === 'pc'")
     b Omiaiってどんなアプリ？
   .info1
     no-ssr
       lazy-component
-        img(src="../../static/logo.png", alt="Omiaiロゴ画像")
+        img(src="../../static/omiai/logo.png", alt="Omiaiロゴ画像",v-if="$ua.deviceType() !== 'pc'",class="omiai_logo_not_pc")
+        img(src="../../static/omiai/logo.png", alt="Omiaiロゴ画像",v-else-if="$ua.deviceType() === 'pc'")
     no-ssr
       lazy-component
-        img(src="../../static/media.png", alt="メディア紹介")
+        img(src="../../static/omiai/media.png", alt="メディア紹介")
     blockquote
       p Omiai（オミアイ）は日本初のFacebookを利用した安心・安全なマッチングサービスです。
       p これまでのオンラインデーティングサービスは誰が登録しているかわからず、不安がつきまといました。
@@ -23,29 +26,33 @@ main.container
     p また、2019年4月の時点では既に会員数は400万人を超えるかなり大手のサービスとなっています。
     p マッチングサービスを使う人なら一度は利用したことがあることが多く、また利用をお勧めできるサービスです。
     p また、多数のメディアにも紹介されておりそれがまた信頼につながっている一つの理由となっています。
-  .start_omiai
+  .start_omiai(v-if="$ua.deviceType() !== 'pc'", class="start_omiai_not_pc")
+    a(href="#",class="btn-square-shadow start_omiai_btn_not_pc") Omiaiを始める
+  .start_omiai(v-else-if="$ua.deviceType() === 'pc'")
     a(href="#",class="btn-square-shadow") Omiaiを始める
   .app_info2
     b なぜOmiaiが安全・安心なのか？
     .info2
       no-ssr
         lazy-component
-          img(src="../../static/secure1.png", alt="安全・安心の理由1")
+          img(src="../../static/omiai/secure1.png", alt="安全・安心の理由1",v-if="$ua.deviceType() !== 'pc'",class="secure_not_pc")
+          img(src="../../static/omiai/secure1.png", alt="安全・安心の理由1",v-else-if="$ua.deviceType() === 'pc'")
       no-ssr
         lazy-component
-          img(src="../../static/secure2.png", alt="安全・安心の理由2")
+          img(src="../../static/omiai/secure2.png", alt="安全・安心の理由2",v-if="$ua.deviceType() !== 'pc'",class="secure_not_pc")
+          img(src="../../static/omiai/secure2.png", alt="安全・安心の理由2",v-else-if="$ua.deviceType() === 'pc'")
       no-ssr
         lazy-component
-          img(src="../../static/secure3.png", alt="安全・安心の理由3")
+          img(src="../../static/omiai/secure3.png", alt="安全・安心の理由3",v-if="$ua.deviceType() !== 'pc'",class="secure_not_pc")
+          img(src="../../static/omiai/secure3.png", alt="安全・安心の理由3",v-else-if="$ua.deviceType() === 'pc'")
       no-ssr
         lazy-component
-          img(src="../../static/secure4.png", alt="安全・安心の理由4")
+          img(src="../../static/omiai/secure4.png", alt="安全・安心の理由4",v-if="$ua.deviceType() !== 'pc'",class="secure_not_pc")
+          img(src="../../static/omiai/secure4.png", alt="安全・安心の理由4",v-else-if="$ua.deviceType() === 'pc'")
       no-ssr
         lazy-component
-          img(src="../../static/secure5.png", alt="安全・安心の理由5")
-      no-ssr
-        lazy-component
-          img(src="../../static/secure6.png", alt="安全・安心の理由6")
+          img(src="../../static/omiai/secure5.png", alt="安全・安心の理由5",v-if="$ua.deviceType() !== 'pc'",class="secure_not_pc")
+          img(src="../../static/omiai/secure5.png", alt="安全・安心の理由5",v-else-if="$ua.deviceType() === 'pc'")
   .add_info2 
     span Omiaiは以下の点で安全・安心の理由を挙げています。
     ul
@@ -140,20 +147,25 @@ main.container
         p 使う地域によるかもしれませんが私の住んでいる福岡ではかなり可愛い女性も沢山登録しています。
         p 結論としては実際に使ってみないと何もわからないので1度自身で利用してみることをオススメします。
         p そこでOmiaiというサービスが自身に会うか会わないか判断していただければよいのではないでしょうか？
-  .start_omiai
+  .start_omiai(v-if="$ua.deviceType() !== 'pc'", class="start_omiai_not_pc")
+    a(href="#",class="btn-square-shadow start_omiai_btn_not_pc") Omiaiを始める
+  .start_omiai(v-else-if="$ua.deviceType() === 'pc'")
     a(href="#",class="btn-square-shadow") Omiaiを始める
   .app_info3 
     b Omiaiをやろうと思うけどどれぐらい料金がかかるの？
     .info3
       no-ssr
         lazy-component
-          img(src="../../static/payment1.png", alt="料金について1",class="scale_image")
+          img(src="../../static/omiai/payment1.png", alt="料金について1",v-if="$ua.deviceType() !== 'pc'",class="payment_not_pc scale_image")
+          img(src="../../static/omiai/payment1.png", alt="料金について1",v-else-if="$ua.deviceType() === 'pc'",class="scale_image")
       no-ssr
         lazy-component
-          img(src="../../static/payment2.png", alt="料金について2",class="scale_image")
+          img(src="../../static/omiai/payment2.png", alt="料金について2",v-if="$ua.deviceType() !== 'pc'",class="payment_not_pc scale_image")
+          img(src="../../static/omiai/payment2.png", alt="料金について2",v-else-if="$ua.deviceType() === 'pc'",class="scale_image")
       no-ssr
         lazy-component
-          img(src="../../static/payment3.png", alt="料金について3")
+          img(src="../../static/omiai/payment3.png", alt="料金について3",v-if="$ua.deviceType() !== 'pc'",class="payment_not_pc")
+          img(src="../../static/omiai/payment3.png", alt="料金について3",v-else-if="$ua.deviceType() === 'pc'")
   .add_info3
     p 基本的には男性が有料、女性が無料となっています。
     p 料金については上の画像の通りですが、
@@ -169,17 +181,20 @@ main.container
       p 1ヶ月だとなかなかいい相手が見つからないまま終わってしまう可能性が高いです。
       p 逆に12ヶ月だと途中でやらなくなって無駄に払い続けるといったことになりやすいです。
       p.red まずはお試しでという方は3ヶ月、しっかり相手を見つけるまでやりたい！という方には6ヶ月がおすすめです！
-    .start_omiai
+    .start_omiai(v-if="$ua.deviceType() !== 'pc'", class="start_omiai_not_pc")
+      a(href="#",class="btn-square-shadow start_omiai_btn_not_pc") Omiaiを始める
+    .start_omiai(v-else-if="$ua.deviceType() === 'pc'")
       a(href="#",class="btn-square-shadow") Omiaiを始める
     span.plan2.plan ・プレミアムパックについて
     .plan2_info
       no-ssr
         lazy-component
-          img(src="../../static/payment1.png", alt="料金について2",height="300px")
+          img(src="../../static/omiai/payment1.png", alt="料金について1",v-if="$ua.deviceType() !== 'pc'",class="payment_not_pc")
+          img(src="../../static/omiai/payment1.png", alt="料金について1",v-else-if="$ua.deviceType() === 'pc'")
       .plan2_info1 プレミアムパックとは購入すると通常の有料会員に比べて2.2倍マッチング率が高くなるサービスのことです。<br>
         | プレミアムパックを購入すると以下のサービスが使えるようになります。
       .plan2_wrapper  
-        .plan2_info2
+        .plan2_info2(v-if="$ua.deviceType() !== 'pc'",class="plan2_not_pc")
           .description
             p
               b 検索機能の追加
@@ -190,9 +205,21 @@ main.container
             p ・お相手のいいね数検索 - いいね！の数がいくつの範囲かを絞って検索することができます。
           no-ssr
             lazy-component  
-              img(src="../../static/plan2_info2.png", alt="検索イメージ",height="300px")
+              img(src="../../static/omiai/plan2_info2.png", alt="検索イメージ",height="300px")
+        .plan2_info2(v-else-if="$ua.deviceType() === 'pc'")
+          .description
+            p
+              b 検索機能の追加
+            p ・ログイン順で検索 - ログインした順にユーザーを検索できるのでメッセージのやり取りにつながりやすくなります。
+            p ・人気順での検索 - 他の男性ユーザーからいいね！をたくさんもらっている女性を表示します。
+            p ・登録日を絞って検索 - 登録した日から女性を絞って検索することができます。
+            p ・メッセージできる検索 - 年齢確認が済んでいるやり取りの可能な女性を表示することができます。
+            p ・お相手のいいね数検索 - いいね！の数がいくつの範囲かを絞って検索することができます。
+          no-ssr
+            lazy-component  
+              img(src="../../static/omiai/plan2_info2.png", alt="検索イメージ",height="300px")
       .plan2_wrapper    
-        .plan2_info3
+        .plan2_info3(v-if="$ua.deviceType() !== 'pc'",class="plan2_not_pc")
           .description
             p
               b 詳細プロフィールの追加
@@ -201,17 +228,49 @@ main.container
             p 通常の有料会員より多くの情報を載せることができるのでその分女性からも自分のことを知ってもらいやすくなり<br>いいねやマッチングの数が上がりやすくなります。
           no-ssr
             lazy-component  
-              img(src="../../static/plan2_info3.png", alt="詳細プロフィールイメージ",height="300px")
+              img(src="../../static/omiai/plan2_info3.png", alt="詳細プロフィールイメージ",height="300px")
+        .plan2_info3(v-else-if="$ua.deviceType() === 'pc'")
+          .description
+            p
+              b 詳細プロフィールの追加
+            p 相手が自分のプロフィールを表示した際に詳細なプロフィールを見ることができます。
+            p 詳細プロフィールが設定されているアイコンが表示されるので相手から自分のプロフィールを見てもらいやすくなります。
+            p 通常の有料会員より多くの情報を載せることができるのでその分女性からも自分のことを知ってもらいやすくなり<br>いいねやマッチングの数が上がりやすくなります。
+          no-ssr
+            lazy-component  
+              img(src="../../static/omiai/plan2_info3.png", alt="詳細プロフィールイメージ",height="300px")
       .plan2_wrapper    
-        .plan2_info4 つぶやきphotoの利用が可能
+        .plan2_info4(v-if="$ua.deviceType() !== 'pc'",class="plan2_not_pc") つぶやきphotoの利用が可能
+          p TwitterやInstagramのように画像を投稿してコメントを載せることができます。
+          p 画像付きのコメントなので相手からのマッチングもしやすくなります。
+        .plan2_info4(v-else-if="$ua.deviceType() === 'pc'") つぶやきphotoの利用が可能
           p TwitterやInstagramのように画像を投稿してコメントを載せることができます。
           p 画像付きのコメントなので相手からのマッチングもしやすくなります。
       .plan2_wrapper    
-        .plan2_info5 相手のログインの状況を知ることができる
+        .plan2_info5(v-if="$ua.deviceType() !== 'pc'",class="plan2_not_pc") 相手のログインの状況を知ることができる
+          p 相手が最後にログインしてからどれぐらい時間がたっているのか、今ログインしているのかを知ることができます。
+          p ログインしている時にメッセージやいいねを送ればマッチングしやすくなります。
+        .plan2_info5(v-else-if="$ua.deviceType() === 'pc'") 相手のログインの状況を知ることができる
           p 相手が最後にログインしてからどれぐらい時間がたっているのか、今ログインしているのかを知ることができます。
           p ログインしている時にメッセージやいいねを送ればマッチングしやすくなります。
       .plan2_wrapper    
-        .plan2_info6 Omiaiポイント購入時にもらえるポイントが増量
+        .plan2_info6(v-if="$ua.deviceType() !== 'pc'",class="plan2_not_pc") Omiaiポイント購入時にもらえるポイントが増量
+          p 大容量のOmiaiポイントを購入した時にもらえるポイントが以下の様に1.5倍になります。
+          table
+            tbody
+              tr
+                th 料金
+                th 通常
+                th プレミアムパック
+              tr
+                td 29,800円
+                td 350ポイント
+                td 550ポイント
+              tr
+                td 11,800円
+                td 120ポイント
+                td 200ポイント
+        .plan2_info6(v-else-if="$ua.deviceType() === 'pc'") Omiaiポイント購入時にもらえるポイントが増量
           p 大容量のOmiaiポイントを購入した時にもらえるポイントが以下の様に1.5倍になります。
           table
             tbody
@@ -228,7 +287,7 @@ main.container
                 td 120ポイント
                 td 200ポイント
       .plan2_wrapper
-        .plan2_info7 一部で消費するポイントが減る
+        .plan2_info7(v-if="$ua.deviceType() !== 'pc'",class="plan2_not_pc") 一部で消費するポイントが減る
           p スペシャルいいね！とメッセージ付きみてね！の2つが、通常に比べて2ポイント少ない消費ポイントで送ることができます。<br>
             | 2ポイント自体は小さな差かもしれませんが何度も送ることを考えるとかなり消費を抑えることができその分マッチングもしやすくなります。
           table
@@ -245,6 +304,23 @@ main.container
                 td メッセージ付きみてね！
                 td 5ポイント
                 td 3ポイント
+        .plan2_info7(v-else-if="$ua.deviceType() === 'pc'") 一部で消費するポイントが減る
+          p スペシャルいいね！とメッセージ付きみてね！の2つが、通常に比べて2ポイント少ない消費ポイントで送ることができます。<br>
+            | 2ポイント自体は小さな差かもしれませんが何度も送ることを考えるとかなり消費を抑えることができその分マッチングもしやすくなります。
+          table
+            tbody
+              tr
+                th 
+                th 通常
+                th プレミアムパック
+              tr
+                td スペシャルいいね！
+                td 5ポイント
+                td 3ポイント
+              tr
+                td メッセージ付きみてね！
+                td 5ポイント
+                td 3ポイント        
       .plan2_summary.red プレミアムパックを買うべきか
       p 上記で紹介したようにプレミアムパックには通常会員に比べて多くの有利な特典を受けることができます。<br>
         | しかし、料金表にあるように一番安い支払方法でも4000円程かかります。<br>
@@ -254,7 +330,8 @@ main.container
       .plan3_info
         no-ssr
           lazy-component
-            img(src="../../static/payment2.png", alt="料金について2",height="300px")
+            img(src="../../static/omiai/payment2.png", alt="料金について2",v-if="$ua.deviceType() !== 'pc'",class="payment_not_pc")
+            img(src="../../static/omiai/payment2.png", alt="料金について2",v-else-if="$ua.deviceType() === 'pc'")
         .plan3_info1 Omiaiポイントとは通常の有料会員が使える機能にさらに追加してマッチングしやすくなる機能を使うためのポイントです。<br>
           | Omiaiポイントで使える機能には以下があります。
         .plan3_info2 いいね！が送れる
@@ -270,7 +347,9 @@ main.container
           p Omiaiポイントを2-8ポイント消費して検索結果の上位に表示されやすくなります。<br>
             | まず相手に見てもらわないといいね！をもらえないのでマッチングしやすくなる有効な方法1つとなります。<br>
             | ただし、ハイライト表示はアプリ版のみの機能でPC版にはありません。
-  .start_omiai
+  .start_omiai(v-if="$ua.deviceType() !== 'pc'", class="start_omiai_not_pc")
+    a(href="#",class="btn-square-shadow start_omiai_btn_not_pc") Omiaiを始める
+  .start_omiai(v-else-if="$ua.deviceType() === 'pc'")
     a(href="#",class="btn-square-shadow") Omiaiを始める
   .app_info5 
     b Omiaiを使用してみた感想
@@ -285,7 +364,9 @@ main.container
     p 今後も継続して使っていけば会える手ごたえは間違いなくあるのでその時は体験談として報告をしたいと思います。
     p 別のサービスとも比較をして記事を投稿していきたいと思いますが今の時点ではOmiaiは多くあるマッチングサービスの中では比較的上位に来るようなサービスだと思います。
     p 気になった方は1度利用してみることをオススメできるサービスと言えると思います。
-  .start_omiai
+  .start_omiai(v-if="$ua.deviceType() !== 'pc'", class="start_omiai_not_pc")
+    a(href="#",class="btn-square-shadow start_omiai_btn_not_pc") Omiaiを始める
+  .start_omiai(v-else-if="$ua.deviceType() === 'pc'")
     a(href="#",class="btn-square-shadow") Omiaiを始める
 </template>
 
@@ -294,7 +375,19 @@ import Card from '~/components/card.vue'
 
 export default {
   components: {
-    Card
+   
+  },
+  methods: {
+    something() {
+      const deviceType = this.$ua.deviceType()
+      this.deviceType = deviceType
+    }
+  },
+  actions: {
+    getDeviceType ({ commit }) {
+      const deviceType = this.$ua.deviceType()
+      commit('SET_DEVICE_TYPE', deviceType)
+    }
   }
 }
 </script>
@@ -372,13 +465,39 @@ export default {
   .app_info1 {
     margin-top:50px;
   }
+  .about_omiai_not_pc {
+    text-align:center;
+  }
+  .start_omiai_not_pc {
+    width:100% !important;
+    text-align:center;
+  }
+  .start_omiai_btn_not_pc {
+    max-width: 100%;
+    width : auto !important;
+  }
+  .omiai_logo_not_pc,.secure_not_pc,.payment_not_pc {
+    padding-right:0px !important;
+  }
+  .payment_not_pc {
+    height:auto !important;
+    max-width: 100%;
+  }
+  .plan2_not_pc {
+    justify-content: center !important;
+    flex-wrap: wrap;
+    width:auto !important;
+    max-width: 100%;
+  }
   .info1,.info2,.info3 {
     display: flex;
     justify-content: center;
     padding-top: 50px;
+    flex-wrap: wrap;
     img {
       height: 203px;
       padding-right: 50px;
+      max-width:100%;
     }
     .scale_image {
       transition-duration: 0.5s;
@@ -442,7 +561,7 @@ export default {
       font-weight:bold;
       margin: 2em 0em;
       padding: 1em;
-      width: 100%;
+      max-width: 100%;
       background-color: #fff; /* 背景色 */
       border: 1px solid #ccc; /* 枠線 */
       p {
@@ -480,7 +599,7 @@ export default {
   }
   .start_omiai {
     width:330px;
-    margin: 30px auto;
+    margin: 20px auto;
     .btn-square-shadow {
       display: inline-block;
       padding: 0.5em 1em;

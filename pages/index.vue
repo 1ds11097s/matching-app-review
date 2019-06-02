@@ -28,10 +28,11 @@
         ul
           li pairs
           li ハッピーメール
+          li 
+            nuxt-link(to="categories/with") with 
       li まだ出会えていないけど会えそうなアプリ紹介
         ul
           li: a(href="/yyc") YYC
-          li with
           li
             nuxt-link(to="categories/Omiai") Omiai
       li あまり出会えなさそうなアプリ紹介
@@ -132,7 +133,7 @@
         p 
           b 今すぐYYCを使ってみる↓
         p: a(href="http://www.yyc.co.jp/af/9112cb3b/", target="_blank")
-          img(src="../static/yycbnr.jpg", width="320px",alt="yycバナー")
+          img(src="../static/omiai/yycbnr.jpg", width="320px",alt="yycバナー")
     h2: a(name="introduce") 実際に出会えたアプリ紹介
     p ※更新準備中です
 </template>
@@ -177,7 +178,7 @@
 }
 
 .main_table td.icon.yyc{
-  background-image: url(../static/yycbnr2.png)
+  background-image: url(../static/omiai/yycbnr2.png)
 }
 
 .main_table td.icon.with{
