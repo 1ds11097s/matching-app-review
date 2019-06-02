@@ -314,6 +314,11 @@ import Vue from 'vue'
 export default {
   head () {
     return {
+      meta: [
+        { charset: 'utf-8' },
+        { hid: 'description', name: 'description', content: 'マッチングアプリwithを実際に使ってみて本当に会えるのかをレビューします。またwithとはどのようなサービスなのか、どういうコンテンツがあるのか、強みは何かも合わせて紹介していきます！' },
+        { name: 'keywords', content: 'マッチングアプリ,with,レビュー,出会い,婚活'},
+      ],
       title: 'マッチングアプリwithを実際に使ってのレビュー、本当に会えるの？',
     }
   },

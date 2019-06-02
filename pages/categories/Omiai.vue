@@ -376,6 +376,11 @@ import Card from '~/components/card.vue'
 export default {
   head () {
     return {
+      meta: [
+        { charset: 'utf-8' },
+        { hid: 'description', name: 'description', content: 'マッチングアプリOmiaiを実際に使ってみて本当に会えるのかをレビューします。またOmiaiとはどのようなサービスなのか、どういうコンテンツがあるのか、強みは何かも合わせて紹介していきます！' },
+        { name: 'keywords', content: 'マッチングアプリ,Omiai,レビュー,出会い,婚活'},
+      ],
       title: 'マッチングアプリOmiaiを実際に使ってのレビュー、本当に会えるの？',
     }
   },

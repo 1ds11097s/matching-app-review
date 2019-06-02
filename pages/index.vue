@@ -138,6 +138,21 @@
     p ※更新準備中です
 </template>
 
+<script>
+export default {
+  head () {
+    return {
+      meta: [
+        { charset: 'utf-8' },
+        { hid: 'description', name: 'description', content: 'YYCやwith、omial、Pairs、ハッピーメールなどのマッチングアプリを実際に使ってみた体験談を元に会えるアプリ、会えないアプリを紹介します！' },
+        { name: 'keywords', content: 'マッチングアプリ,YYC,with,Omiai,Pairs'},
+      ],
+      title: 'マッチングアプリwithを実際に使ってのレビュー、本当に会えるの？',
+    }
+  }
+}
+</script>
+
 <style>
 .container {
   width: 80%;
