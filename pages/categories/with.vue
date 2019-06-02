@@ -52,7 +52,7 @@ main.container
     p 最近知名度もかなり上がってきているようでサービスの内容も充実しているので一度使ってみるのをオススメできるアプリとなっています。
   .start_with_text ↓ withを始める ↓
   .start_with
-    a(href="https://t.afi-b.com/visit.php?guid=ON&a=Y9306j-J315373G&p=s687592m" target="_blank" rel="nofollow")
+    a(href="https://t.afi-b.com/visit.php?guid=ON&a=Y9306j-J315373G&p=s687592m" target="_blank" rel="noopener nofollow")
       img(src="https://www.afi-b.com/upload_image/9306-1519773417-3.gif" width="468" height="60" style="border:none;" alt="with（ウィズ）")
     img(src="https://t.afi-b.com/lead/Y9306j/s687592m/J315373G" width="1" height="1" style="border:none;" alt="with（ウィズ）")
   .app_info2
@@ -105,7 +105,7 @@ main.container
       p イベントに参加するとアンケートのようなものに答えていきますが、デザインも凝っているので回答することも楽しめると思います！
   .start_with_text ↓ withを始める ↓
   .start_with
-    a(href="https://t.afi-b.com/visit.php?guid=ON&a=Y9306j-J315373G&p=s687592m" target="_blank" rel="nofollow")
+    a(href="https://t.afi-b.com/visit.php?guid=ON&a=Y9306j-J315373G&p=s687592m" target="_blank" rel="noopener nofollow")
       img(src="https://www.afi-b.com/upload_image/9306-1519773417-3.gif" width="468" height="60" style="border:none;" alt="with（ウィズ）")
     img(src="https://t.afi-b.com/lead/Y9306j/s687592m/J315373G" width="1" height="1" style="border:none;" alt="with（ウィズ）")    
   .app_info4
@@ -206,7 +206,7 @@ main.container
         p 気軽に始めることができるので、もしあなたが悩んでいるのなら自信を持ってオススメできるサービスなので一度やってみてください！
   .start_with_text ↓ withを始める ↓
   .start_with
-    a(href="https://t.afi-b.com/visit.php?guid=ON&a=Y9306j-J315373G&p=s687592m" target="_blank" rel="nofollow")
+    a(href="https://t.afi-b.com/visit.php?guid=ON&a=Y9306j-J315373G&p=s687592m" target="_blank" rel="noopener nofollow")
       img(src="https://www.afi-b.com/upload_image/9306-1519773417-3.gif" width="468" height="60" style="border:none;" alt="with（ウィズ）")
     img(src="https://t.afi-b.com/lead/Y9306j/s687592m/J315373G" width="1" height="1" style="border:none;" alt="with（ウィズ）")
   .app_info3 
@@ -284,7 +284,7 @@ main.container
     p 気になっている方は一度使ってみることを是非おすすめします！
   .start_with_text ↓ withを始める ↓
   .start_with
-    a(href="https://t.afi-b.com/visit.php?guid=ON&a=Y9306j-J315373G&p=s687592m" target="_blank" rel="nofollow")
+    a(href="https://t.afi-b.com/visit.php?guid=ON&a=Y9306j-J315373G&p=s687592m" target="_blank" rel="noopener nofollow")
       img(src="https://www.afi-b.com/upload_image/9306-1519773417-3.gif" width="468" height="60" style="border:none;" alt="with（ウィズ）")
     img(src="https://t.afi-b.com/lead/Y9306j/s687592m/J315373G" width="1" height="1" style="border:none;" alt="with（ウィズ）")    
   
