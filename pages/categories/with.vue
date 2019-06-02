@@ -6,20 +6,33 @@ main.container
       lazy-component
         img(src="../../static/with/main.jpg", alt="メイン画像")
   .app_info1
-    b 紹介動画
+    b 紹介動画 (画像をクリックするとyoutubeで再生します)
   .app_movie_wrap
     .app_movie1
-      youtube(
-        class="youtube1"
-        ref="youtube"
-        video-id="aGlEbsvxVtM"
-        :player-vars="{start: 0, autoplay: 0}")
+      no-ssr
+        lazy-component
+          a(href="https://www.youtube.com/watch?v=aGlEbsvxVtM" target="_blank" rel="noopener nofollow")
+            img(src="../../static/with/youtube1.png", alt="with紹介動画1")
     .app_movie2
-      youtube(
-        class="youtube1"
-        ref="youtube"
-        video-id="Zc2zUGGX4-o"
-        :player-vars="{start: 0, autoplay: 0}")
+      no-ssr
+        lazy-component
+          a(href="https://www.youtube.com/watch?v=Zc2zUGGX4-o" target="_blank" rel="noopener nofollow")
+            img(src="../../static/with/youtube2.png", alt="with紹介動画2")
+      //- no-ssr
+      //-   youtube(
+      //-     class="youtube1"
+      //-     ref="youtube"
+      //-     video-id="aGlEbsvxVtM"
+      //-     :player-vars="{autoplay:1}"
+      //-     host="https://www/youtube.com")
+      //- .app_movie2
+      //-   no-ssr
+      //-     youtube(
+      //-       class="youtube1"
+      //-       ref="youtube"
+      //-       video-id="Zc2zUGGX4-o"
+      //-       :player-vars="{start: 0, autoplay: 0}"
+      //-       origin='https://www.youtube.com')
   .app_info1(v-if="$ua.deviceType() !== 'pc'", class="about_with_not_pc")
     b withってどんなアプリ？
   .app_info1(v-else-if="$ua.deviceType() === 'pc'")
@@ -292,11 +305,17 @@ main.container
 
 <script>
 import Vue from 'vue'
-import VueYoutube from 'vue-youtube'
+// import VueYoutube from 'vue-youtube'
+//import VueYouTubeEmbed from 'vue-youtube-embed'
+//Vue.use(VueYouTubeEmbed)
 
-Vue.use(VueYoutube)
+//Vue.use(VueYoutube)
 
 export default {
+  head () {
+    return {
+    }
+  },
   components: {
    
   },
@@ -330,6 +349,12 @@ export default {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    .app_movie1,.app_movie2 {
+      max-width:50%;
+      img {
+        width:80%;
+      }
+    }
   }
   .subsubtitle {
     font-size: 24px;
