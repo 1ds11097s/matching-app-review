@@ -8,18 +8,18 @@ main.container
   .app_info1
     b 紹介動画
   .app_movie_wrap
-    //- .app_movie1
-    //-   youtube(
-    //-     class="youtube1"
-    //-     ref="youtube"
-    //-     video-id="aGlEbsvxVtM"
-    //-     :player-vars="{autoplay:1}")
-    //- .app_movie2
-    //-   youtube(
-    //-     class="youtube1"
-    //-     ref="youtube"
-    //-     video-id="Zc2zUGGX4-o"
-    //-     :player-vars="{autoplay:1}")
+    .app_movie1
+      youtube(
+        class="youtube1"
+        ref="youtube"
+        video-id="aGlEbsvxVtM"
+        :player-vars="{start: 0, autoplay: 0}")
+    .app_movie2
+      youtube(
+        class="youtube1"
+        ref="youtube"
+        video-id="Zc2zUGGX4-o"
+        :player-vars="{start: 0, autoplay: 0}")
   .app_info1(v-if="$ua.deviceType() !== 'pc'", class="about_with_not_pc")
     b withってどんなアプリ？
   .app_info1(v-else-if="$ua.deviceType() === 'pc'")
