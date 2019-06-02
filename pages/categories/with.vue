@@ -12,12 +12,12 @@ main.container
       no-ssr
         lazy-component
           a(href="https://www.youtube.com/watch?v=aGlEbsvxVtM" target="_blank" rel="noopener nofollow")
-            img(src="../../static/with/youtube1.png", alt="with紹介動画1")
+            img(src="../../static/with/youtube11.png", alt="with紹介動画1")
     .app_movie2
       no-ssr
         lazy-component
           a(href="https://www.youtube.com/watch?v=Zc2zUGGX4-o" target="_blank" rel="noopener nofollow")
-            img(src="../../static/with/youtube2.png", alt="with紹介動画2")
+            img(src="../../static/with/youtube22.png", alt="with紹介動画2")
       //- no-ssr
       //-   youtube(
       //-     class="youtube1"
