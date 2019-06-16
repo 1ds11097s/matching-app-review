@@ -2,21 +2,15 @@
 main.container
   h3.subsubtitle ～マッチングアプリOmiaiの紹介と使用してみた感想～
   .main_img
-    no-ssr
-      lazy-component
-        img(src="../../static/omiai/main.png", alt="メイン画像")
+    img(src="../../static/omiai/main.png", alt="メイン画像" width="1472px" height="828px")
   .app_info1(v-if="$ua.deviceType() !== 'pc'", class="about_omiai_not_pc")
     b Omiaiってどんなアプリ？
   .app_info1(v-else-if="$ua.deviceType() === 'pc'")
     b Omiaiってどんなアプリ？
   .info1
-    no-ssr
-      lazy-component
-        img(src="../../static/omiai/logo.png", alt="Omiaiロゴ画像",v-if="$ua.deviceType() !== 'pc'",class="omiai_logo_not_pc")
-        img(src="../../static/omiai/logo.png", alt="Omiaiロゴ画像",v-else-if="$ua.deviceType() === 'pc'")
-    no-ssr
-      lazy-component
-        img(src="../../static/omiai/media.png", alt="メディア紹介")
+    img(src="../../static/omiai/logo.png", alt="Omiaiロゴ画像",v-if="$ua.deviceType() !== 'pc'",class="omiai_logo_not_pc" width="170" height="250")
+    img(src="../../static/omiai/logo.png", alt="Omiaiロゴ画像",v-else-if="$ua.deviceType() === 'pc'" width="170" height="250")
+    img(src="../../static/omiai/media.png", alt="メディア紹介" width="500" height="250")
     blockquote
       p Omiai（オミアイ）は日本初のFacebookを利用した安心・安全なマッチングサービスです。
       p これまでのオンラインデーティングサービスは誰が登録しているかわからず、不安がつきまといました。
@@ -33,26 +27,16 @@ main.container
   .app_info2
     b なぜOmiaiが安全・安心なのか？
     .info2
-      no-ssr
-        lazy-component
-          img(src="../../static/omiai/secure1.png", alt="安全・安心の理由1",v-if="$ua.deviceType() !== 'pc'",class="secure_not_pc")
-          img(src="../../static/omiai/secure1.png", alt="安全・安心の理由1",v-else-if="$ua.deviceType() === 'pc'")
-      no-ssr
-        lazy-component
-          img(src="../../static/omiai/secure2.png", alt="安全・安心の理由2",v-if="$ua.deviceType() !== 'pc'",class="secure_not_pc")
-          img(src="../../static/omiai/secure2.png", alt="安全・安心の理由2",v-else-if="$ua.deviceType() === 'pc'")
-      no-ssr
-        lazy-component
-          img(src="../../static/omiai/secure3.png", alt="安全・安心の理由3",v-if="$ua.deviceType() !== 'pc'",class="secure_not_pc")
-          img(src="../../static/omiai/secure3.png", alt="安全・安心の理由3",v-else-if="$ua.deviceType() === 'pc'")
-      no-ssr
-        lazy-component
-          img(src="../../static/omiai/secure4.png", alt="安全・安心の理由4",v-if="$ua.deviceType() !== 'pc'",class="secure_not_pc")
-          img(src="../../static/omiai/secure4.png", alt="安全・安心の理由4",v-else-if="$ua.deviceType() === 'pc'")
-      no-ssr
-        lazy-component
-          img(src="../../static/omiai/secure5.png", alt="安全・安心の理由5",v-if="$ua.deviceType() !== 'pc'",class="secure_not_pc")
-          img(src="../../static/omiai/secure5.png", alt="安全・安心の理由5",v-else-if="$ua.deviceType() === 'pc'")
+      img(src="../../static/omiai/secure1.png", alt="安全・安心の理由1",v-if="$ua.deviceType() !== 'pc'",class="secure_not_pc" width="200" height="200")
+      img(src="../../static/omiai/secure1.png", alt="安全・安心の理由1",v-else-if="$ua.deviceType() === 'pc'" width="200" height="200")
+      img(src="../../static/omiai/secure2.png", alt="安全・安心の理由2",v-if="$ua.deviceType() !== 'pc'",class="secure_not_pc" width="200" height="200")
+      img(src="../../static/omiai/secure2.png", alt="安全・安心の理由2",v-else-if="$ua.deviceType() === 'pc'" width="200" height="200")
+      img(src="../../static/omiai/secure3.png", alt="安全・安心の理由3",v-if="$ua.deviceType() !== 'pc'",class="secure_not_pc" width="200" height="200")
+      img(src="../../static/omiai/secure3.png", alt="安全・安心の理由3",v-else-if="$ua.deviceType() === 'pc'" width="200" height="200")
+      img(src="../../static/omiai/secure4.png", alt="安全・安心の理由4",v-if="$ua.deviceType() !== 'pc'",class="secure_not_pc" width="200" height="200")
+      img(src="../../static/omiai/secure4.png", alt="安全・安心の理由4",v-else-if="$ua.deviceType() === 'pc'" width="200" height="200")
+      img(src="../../static/omiai/secure5.png", alt="安全・安心の理由5",v-if="$ua.deviceType() !== 'pc'",class="secure_not_pc" width="200" height="200")
+      img(src="../../static/omiai/secure5.png", alt="安全・安心の理由5",v-else-if="$ua.deviceType() === 'pc'" width="200" height="200")
   .add_info2 
     span Omiaiは以下の点で安全・安心の理由を挙げています。
     ul
@@ -154,18 +138,12 @@ main.container
   .app_info3 
     b Omiaiをやろうと思うけどどれぐらい料金がかかるの？
     .info3
-      no-ssr
-        lazy-component
-          img(src="../../static/omiai/payment1.png", alt="料金について1",v-if="$ua.deviceType() !== 'pc'",class="payment_not_pc scale_image")
-          img(src="../../static/omiai/payment1.png", alt="料金について1",v-else-if="$ua.deviceType() === 'pc'",class="scale_image")
-      no-ssr
-        lazy-component
-          img(src="../../static/omiai/payment2.png", alt="料金について2",v-if="$ua.deviceType() !== 'pc'",class="payment_not_pc scale_image")
-          img(src="../../static/omiai/payment2.png", alt="料金について2",v-else-if="$ua.deviceType() === 'pc'",class="scale_image")
-      no-ssr
-        lazy-component
-          img(src="../../static/omiai/payment3.png", alt="料金について3",v-if="$ua.deviceType() !== 'pc'",class="payment_not_pc")
-          img(src="../../static/omiai/payment3.png", alt="料金について3",v-else-if="$ua.deviceType() === 'pc'")
+      img(src="../../static/omiai/payment1.png", alt="料金について1",v-if="$ua.deviceType() !== 'pc'",class="payment_not_pc scale_image" width="790" height="642")
+      img(src="../../static/omiai/payment1.png", alt="料金について1",v-else-if="$ua.deviceType() === 'pc'",class="scale_image" width="250" height="200")
+      img(src="../../static/omiai/payment2.png", alt="料金について2",v-if="$ua.deviceType() !== 'pc'",class="payment_not_pc scale_image" width="1185" height="729")
+      img(src="../../static/omiai/payment2.png", alt="料金について2",v-else-if="$ua.deviceType() === 'pc'",class="scale_image" width="300" height="200")
+      img(src="../../static/omiai/payment3.png", alt="料金について3",v-if="$ua.deviceType() !== 'pc'",class="payment_not_pc" width="300" height="150")
+      img(src="../../static/omiai/payment3.png", alt="料金について3",v-else-if="$ua.deviceType() === 'pc'" width="300" height="150")
   .add_info3
     p 基本的には男性が有料、女性が無料となっています。
     p 料金については上の画像の通りですが、
@@ -187,10 +165,8 @@ main.container
       a(href="#",class="btn-square-shadow") Omiaiを始める
     span.plan2.plan ・プレミアムパックについて
     .plan2_info
-      no-ssr
-        lazy-component
-          img(src="../../static/omiai/payment1.png", alt="料金について1",v-if="$ua.deviceType() !== 'pc'",class="payment_not_pc")
-          img(src="../../static/omiai/payment1.png", alt="料金について1",v-else-if="$ua.deviceType() === 'pc'")
+      img(src="../../static/omiai/payment1.png", alt="料金について1",v-if="$ua.deviceType() !== 'pc'",class="payment_not_pc" width="250" height="200")
+      img(src="../../static/omiai/payment1.png", alt="料金について1",v-else-if="$ua.deviceType() === 'pc'" width="250" height="200")
       .plan2_info1 プレミアムパックとは購入すると通常の有料会員に比べて2.2倍マッチング率が高くなるサービスのことです。<br>
         | プレミアムパックを購入すると以下のサービスが使えるようになります。
       .plan2_wrapper  
@@ -203,9 +179,7 @@ main.container
             p ・登録日を絞って検索 - 登録した日から女性を絞って検索することができます。
             p ・メッセージできる検索 - 年齢確認が済んでいるやり取りの可能な女性を表示することができます。
             p ・お相手のいいね数検索 - いいね！の数がいくつの範囲かを絞って検索することができます。
-          no-ssr
-            lazy-component  
-              img(src="../../static/omiai/plan2_info2.png", alt="検索イメージ",height="300px")
+            img(src="../../static/omiai/plan2_info2.png", alt="検索イメージ",width="150" height="300")
         .plan2_info2(v-else-if="$ua.deviceType() === 'pc'")
           .description
             p
@@ -215,9 +189,7 @@ main.container
             p ・登録日を絞って検索 - 登録した日から女性を絞って検索することができます。
             p ・メッセージできる検索 - 年齢確認が済んでいるやり取りの可能な女性を表示することができます。
             p ・お相手のいいね数検索 - いいね！の数がいくつの範囲かを絞って検索することができます。
-          no-ssr
-            lazy-component  
-              img(src="../../static/omiai/plan2_info2.png", alt="検索イメージ",height="300px")
+            img(src="../../static/omiai/plan2_info2.png", alt="検索イメージ",width="150", height="300")
       .plan2_wrapper    
         .plan2_info3(v-if="$ua.deviceType() !== 'pc'",class="plan2_not_pc")
           .description
@@ -226,9 +198,7 @@ main.container
             p 相手が自分のプロフィールを表示した際に詳細なプロフィールを見ることができます。
             p 詳細プロフィールが設定されているアイコンが表示されるので相手から自分のプロフィールを見てもらいやすくなります。
             p 通常の有料会員より多くの情報を載せることができるのでその分女性からも自分のことを知ってもらいやすくなり<br>いいねやマッチングの数が上がりやすくなります。
-          no-ssr
-            lazy-component  
-              img(src="../../static/omiai/plan2_info3.png", alt="詳細プロフィールイメージ",height="300px")
+            img(src="../../static/omiai/plan2_info3.png", alt="詳細プロフィールイメージ",width="150", height="300")
         .plan2_info3(v-else-if="$ua.deviceType() === 'pc'")
           .description
             p
@@ -236,9 +206,7 @@ main.container
             p 相手が自分のプロフィールを表示した際に詳細なプロフィールを見ることができます。
             p 詳細プロフィールが設定されているアイコンが表示されるので相手から自分のプロフィールを見てもらいやすくなります。
             p 通常の有料会員より多くの情報を載せることができるのでその分女性からも自分のことを知ってもらいやすくなり<br>いいねやマッチングの数が上がりやすくなります。
-          no-ssr
-            lazy-component  
-              img(src="../../static/omiai/plan2_info3.png", alt="詳細プロフィールイメージ",height="300px")
+            img(src="../../static/omiai/plan2_info3.png", alt="詳細プロフィールイメージ",width="150", height="300")
       .plan2_wrapper    
         .plan2_info4(v-if="$ua.deviceType() !== 'pc'",class="plan2_not_pc") つぶやきphotoの利用が可能
           p TwitterやInstagramのように画像を投稿してコメントを載せることができます。
@@ -328,10 +296,8 @@ main.container
         | 購入する場合はよく考えてからすることをおすすめします笑 
     span.plan3.plan ・Omiaiポイントについて
       .plan3_info
-        no-ssr
-          lazy-component
-            img(src="../../static/omiai/payment2.png", alt="料金について2",v-if="$ua.deviceType() !== 'pc'",class="payment_not_pc")
-            img(src="../../static/omiai/payment2.png", alt="料金について2",v-else-if="$ua.deviceType() === 'pc'")
+        img(src="../../static/omiai/payment2.png", alt="料金について2",v-if="$ua.deviceType() !== 'pc'",class="payment_not_pc" width="300" height="200")
+        img(src="../../static/omiai/payment2.png", alt="料金について2",v-else-if="$ua.deviceType() === 'pc'" width="300" height="200")
         .plan3_info1 Omiaiポイントとは通常の有料会員が使える機能にさらに追加してマッチングしやすくなる機能を使うためのポイントです。<br>
           | Omiaiポイントで使える機能には以下があります。
         .plan3_info2 いいね！が送れる
@@ -377,9 +343,11 @@ export default {
   head () {
     return {
       meta: [
-        { charset: 'utf-8' },
         { hid: 'description', name: 'description', content: 'マッチングアプリOmiaiを実際に使ってみて本当に会えるのかをレビューします。またOmiaiとはどのようなサービスなのか、どういうコンテンツがあるのか、強みは何かも合わせて紹介していきます！' },
         { name: 'keywords', content: 'マッチングアプリ,Omiai,レビュー,出会い,婚活'},
+      ],
+      link: [
+        { rel: 'canonical', href: 'https://matching-app-review.xyz/categories/Omiai'}
       ],
       title: 'マッチングアプリOmiaiを実際に使ってのレビュー、本当に会えるの？',
     }
@@ -479,25 +447,28 @@ export default {
     text-align:center;
   }
   .start_omiai_not_pc {
-    width:100% !important;
+    width:100%;
     text-align:center;
   }
   .start_omiai_btn_not_pc {
     max-width: 100%;
-    width : auto !important;
+    width : auto;
   }
   .omiai_logo_not_pc,.secure_not_pc,.payment_not_pc {
-    padding-right:0px !important;
+    padding-right:0px;
   }
   .payment_not_pc {
-    height:auto !important;
+    height:auto;
     max-width: 100%;
   }
   .plan2_not_pc {
-    justify-content: center !important;
+    justify-content: center;
     flex-wrap: wrap;
-    width:auto !important;
-    max-width: 100%;
+    width:auto;
+    max-width: 87%;
+    .description {
+      padding:1em;
+    }
   }
   .info1,.info2,.info3 {
     display: flex;
@@ -509,16 +480,21 @@ export default {
       padding-right: 50px;
       max-width:100%;
     }
-    .scale_image {
-      transition-duration: 0.5s;
-    }
-    .scale_image:hover {
-      transform: scale(2.0,2.0); /*画像の拡大*/
-    }
+    // .scale_image {
+    //   transition-duration: 0.5s;
+    // }
+    // .scale_image:hover {
+    //   transform: scale(2.0,2.0); /*画像の拡大*/
+    // }
     blockquote {
       padding: 0.5em 1em;
       border: double 5px #4ec4d3;
       font-size:17px;
+    }
+  }
+  .info1,.info3 {
+    amp-img {
+      margin:10px;
     }
   }
   .app_info2 {
@@ -605,7 +581,7 @@ export default {
   }
   .red {
     color: red;
-    font-weight: bold !important;
+    font-weight: bold;
   }
   .start_omiai {
     width:330px;
@@ -618,7 +594,7 @@ export default {
       color: #FFF;
       border-bottom: solid 4px #627295;
       border-radius: 3px;
-      width: 100%;
+      width: 80%;
       text-align: center;
       letter-spacing: 10px;
     }

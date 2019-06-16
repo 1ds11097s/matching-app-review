@@ -25,28 +25,3 @@ export default {
   }
 }
 </script>
-
-<style>
-html {
-  font-family: "Source Sans Pro", 游ゴシック体, 'Yu Gothic', YuGothic, 'ヒラギノ角ゴシック Pro', 'Hiragino Kaku Gothic Pro', メイリオ, Meiryo, sans-serif;
-  font-size: 16px;
-}
-h1, h2, h3 {
-  font-weight: normal;
-}
-.title {
-  color: #35495e;
-  margin: 100px 0 30px;
-  text-align: center;
-}
-.subtitle {
-  color: #35495e;
-  text-align: center;
-}
-.page_subtitle_not_pc {
-  font-size:20px;
-}
-.page_title_not_pc {
-  font-size:22px;
-}
-</style>

@@ -1,23 +1,17 @@
 <template lang="pug">
-main.container
+main.container_with
   h3.subsubtitle ～マッチングアプリwithの紹介と使用してみた感想～
   .main_img
-    no-ssr
-      lazy-component
-        img(src="../../static/with/main.jpg", alt="メイン画像")
+    img(src="../../static/with/main.jpg", alt="メイン画像" width="2208" height="1242")
   .app_info1
     b 紹介動画 (画像をクリックするとyoutubeで再生します)
   .app_movie_wrap
     .app_movie1
-      no-ssr
-        lazy-component
-          a(href="https://www.youtube.com/watch?v=aGlEbsvxVtM" target="_blank" rel="noopener nofollow")
-            img(src="../../static/with/youtube11.png", alt="with紹介動画1")
+      a(href="https://www.youtube.com/watch?v=aGlEbsvxVtM" target="_blank" rel="noopener nofollow")
+        img(src="../../static/with/youtube11.png", alt="with紹介動画1" width="800" height="500")
     .app_movie2
-      no-ssr
-        lazy-component
-          a(href="https://www.youtube.com/watch?v=Zc2zUGGX4-o" target="_blank" rel="noopener nofollow")
-            img(src="../../static/with/youtube22.png", alt="with紹介動画2")
+      a(href="https://www.youtube.com/watch?v=Zc2zUGGX4-o" target="_blank" rel="noopener nofollow")
+        img(src="../../static/with/youtube22.png", alt="with紹介動画2" width="800" height="500")
       //- no-ssr
       //-   youtube(
       //-     class="youtube1"
@@ -38,13 +32,9 @@ main.container
   .app_info1(v-else-if="$ua.deviceType() === 'pc'")
     b withってどんなアプリ？
   .info1
-    no-ssr
-      lazy-component
-        img(src="../../static/with/img1.jpg", alt="with紹介画像",v-if="$ua.deviceType() !== 'pc'",class="with_logo_not_pc")
-        img(src="../../static/with/img1.jpg", alt="with紹介画像",v-else-if="$ua.deviceType() === 'pc'")
-    no-ssr
-      lazy-component
-        img(src="../../static/with/img2.jpg", alt="with紹介画像")
+    img(src="../../static/with/img1.jpg", alt="with紹介画像",v-if="$ua.deviceType() !== 'pc'",class="with_logo_not_pc" width="800" height="500")
+    img(src="../../static/with/img1.jpg", alt="with紹介画像",v-else-if="$ua.deviceType() === 'pc'" width="800" height="500")
+    img(src="../../static/with/img2.jpg", alt="with紹介画像" width="800" height="500")
     blockquote
       p(style="color:#6E2203;font-weight:bold") 3人に2人がマッチング成功！
       p(style="color:#FE636D;font-weight:bold;font-size:20px") 運命よりも、確実な恋愛へ
@@ -64,17 +54,19 @@ main.container
     p コミュニティも豊富で同じ共通点を持った相手を見つけやすくマッチングもしやすいというのがこのアプリの特徴となっています。
     p 最近知名度もかなり上がってきているようでサービスの内容も充実しているので一度使ってみるのをオススメできるアプリとなっています。
   .start_with_text ↓ withを始める ↓
-  .start_with
+  .start_with_not_pc(v-if="$ua.deviceType() !== 'pc'")
+    a(href="https://t.afi-b.com/visit.php?guid=ON&a=Y9306j-J315373G&p=s687592m" target="_blank" rel="noopener nofollow")
+      img(src="https://www.afi-b.com/upload_image/9306-1519773417-3.gif" width="468" height="60" style="border:none;" alt="with（ウィズ）")
+    img(src="https://t.afi-b.com/lead/Y9306j/s687592m/J315373G" width="1" height="1" style="border:none;" alt="with（ウィズ）")
+  .start_with(v-else)
     a(href="https://t.afi-b.com/visit.php?guid=ON&a=Y9306j-J315373G&p=s687592m" target="_blank" rel="noopener nofollow")
       img(src="https://www.afi-b.com/upload_image/9306-1519773417-3.gif" width="468" height="60" style="border:none;" alt="with（ウィズ）")
     img(src="https://t.afi-b.com/lead/Y9306j/s687592m/J315373G" width="1" height="1" style="border:none;" alt="with（ウィズ）")
   .app_info2
     b なぜwithが安全・安心なのか？
     .info2
-      no-ssr
-        lazy-component
-          img(src="../../static/with/secure1.jpg", alt="安全・安心の理由1",v-if="$ua.deviceType() !== 'pc'",class="secure_not_pc")
-          img(src="../../static/with/secure1.jpg", alt="安全・安心の理由1",v-else-if="$ua.deviceType() === 'pc'")
+      img(src="../../static/with/secure1.jpg", alt="安全・安心の理由1",v-if="$ua.deviceType() !== 'pc'",class="secure_not_pc" width="800" height="500")
+      img(src="../../static/with/secure1.jpg", alt="安全・安心の理由1",v-else-if="$ua.deviceType() === 'pc'" width="800" height="500")
   .add_info2 
     span withは以下の点で安全・安心の理由を挙げています。
     ul
@@ -86,30 +78,18 @@ main.container
   .app_info2
     b withはイベントの豊富さが特徴的です
     .info2
-      no-ssr
-        lazy-component
-          img(src="../../static/with/campaign1.jpg", alt="イベント・キャンペーン1",v-if="$ua.deviceType() !== 'pc'",class="secure_not_pc")
-          img(src="../../static/with/campaign1.jpg", alt="イベント・キャンペーン1",v-else-if="$ua.deviceType() === 'pc'")
-      no-ssr
-        lazy-component
-          img(src="../../static/with/campaign2.jpg", alt="イベント・キャンペーン2",v-if="$ua.deviceType() !== 'pc'",class="secure_not_pc")
-          img(src="../../static/with/campaign2.jpg", alt="イベント・キャンペーン2",v-else-if="$ua.deviceType() === 'pc'")
-      no-ssr
-        lazy-component
-          img(src="../../static/with/campaign3.jpg", alt="イベント・キャンペーン3",v-if="$ua.deviceType() !== 'pc'",class="secure_not_pc")
-          img(src="../../static/with/campaign3.jpg", alt="イベント・キャンペーン3",v-else-if="$ua.deviceType() === 'pc'")
-      no-ssr
-        lazy-component
-          img(src="../../static/with/campaign4.jpg", alt="イベント・キャンペーン4",v-if="$ua.deviceType() !== 'pc'",class="secure_not_pc")
-          img(src="../../static/with/campaign4.jpg", alt="イベント・キャンペーン4",v-else-if="$ua.deviceType() === 'pc'")
-      no-ssr
-        lazy-component
-          img(src="../../static/with/campaign5.jpg", alt="イベント・キャンペーン5",v-if="$ua.deviceType() !== 'pc'",class="secure_not_pc")
-          img(src="../../static/with/campaign5.jpg", alt="イベント・キャンペーン5",v-else-if="$ua.deviceType() === 'pc'")
-      no-ssr
-        lazy-component
-          img(src="../../static/with/campaign6.jpg", alt="イベント・キャンペーン6",v-if="$ua.deviceType() !== 'pc'",class="secure_not_pc")
-          img(src="../../static/with/campaign6.jpg", alt="イベント・キャンペーン6",v-else-if="$ua.deviceType() === 'pc'")
+      img(src="../../static/with/campaign1.jpg", alt="イベント・キャンペーン1",v-if="$ua.deviceType() !== 'pc'",class="secure_not_pc" width="100" height="250")
+      img(src="../../static/with/campaign1.jpg", alt="イベント・キャンペーン1",v-else-if="$ua.deviceType() === 'pc'" width="100" height="250")
+      img(src="../../static/with/campaign2.jpg", alt="イベント・キャンペーン2",v-if="$ua.deviceType() !== 'pc'",class="secure_not_pc" width="100" height="250")
+      img(src="../../static/with/campaign2.jpg", alt="イベント・キャンペーン2",v-else-if="$ua.deviceType() === 'pc'" width="100" height="250")
+      img(src="../../static/with/campaign3.jpg", alt="イベント・キャンペーン3",v-if="$ua.deviceType() !== 'pc'",class="secure_not_pc" width="100" height="250")
+      img(src="../../static/with/campaign3.jpg", alt="イベント・キャンペーン3",v-else-if="$ua.deviceType() === 'pc'" width="100" height="250")
+      img(src="../../static/with/campaign4.jpg", alt="イベント・キャンペーン4",v-if="$ua.deviceType() !== 'pc'",class="secure_not_pc" width="100" height="250")
+      img(src="../../static/with/campaign4.jpg", alt="イベント・キャンペーン4",v-else-if="$ua.deviceType() === 'pc'" width="100" height="250")
+      img(src="../../static/with/campaign5.jpg", alt="イベント・キャンペーン5",v-if="$ua.deviceType() !== 'pc'",class="secure_not_pc" width="100" height="250")
+      img(src="../../static/with/campaign5.jpg", alt="イベント・キャンペーン5",v-else-if="$ua.deviceType() === 'pc'" width="100" height="250")
+      img(src="../../static/with/campaign6.jpg", alt="イベント・キャンペーン6",v-if="$ua.deviceType() !== 'pc'",class="secure_not_pc" width="100" height="250")
+      img(src="../../static/with/campaign6.jpg", alt="イベント・キャンペーン6",v-else-if="$ua.deviceType() === 'pc'" width="100" height="250")
   .add_info2 
     span withではキャンペーンやイベントがいつも行われています！
       p 他のマッチングアプリと大きく違う点の一つとしてこのイベントやキャンペーンが豊富な点が挙げられます。   
@@ -117,10 +97,14 @@ main.container
       p 似た相手ってわかるだけでマッチングしやすくなったり、話すきっかけになったりしやすいはずです。
       p イベントに参加するとアンケートのようなものに答えていきますが、デザインも凝っているので回答することも楽しめると思います！
   .start_with_text ↓ withを始める ↓
-  .start_with
+  .start_with_not_pc(v-if="$ua.deviceType() !== 'pc'")
     a(href="https://t.afi-b.com/visit.php?guid=ON&a=Y9306j-J315373G&p=s687592m" target="_blank" rel="noopener nofollow")
       img(src="https://www.afi-b.com/upload_image/9306-1519773417-3.gif" width="468" height="60" style="border:none;" alt="with（ウィズ）")
-    img(src="https://t.afi-b.com/lead/Y9306j/s687592m/J315373G" width="1" height="1" style="border:none;" alt="with（ウィズ）")    
+    img(src="https://t.afi-b.com/lead/Y9306j/s687592m/J315373G" width="1" height="1" style="border:none;" alt="with（ウィズ）")
+  .start_with(v-else)
+    a(href="https://t.afi-b.com/visit.php?guid=ON&a=Y9306j-J315373G&p=s687592m" target="_blank" rel="noopener nofollow")
+      img(src="https://www.afi-b.com/upload_image/9306-1519773417-3.gif" width="468" height="60" style="border:none;" alt="with（ウィズ）")
+    img(src="https://t.afi-b.com/lead/Y9306j/s687592m/J315373G" width="1" height="1" style="border:none;" alt="with（ウィズ）")
   .app_info4
     b withを使った他ユーザーのレビュー
   .add_info4
@@ -218,21 +202,21 @@ main.container
         p 実際にレビューで書いてあることは自分自身でやってみて確かめてみることをおすすめします。
         p.pink 気軽に始めることができるので、もしあなたが悩んでいるのなら自信を持ってオススメできるサービスなので一度やってみてください！
   .start_with_text ↓ withを始める ↓
-  .start_with
+  .start_with_not_pc(v-if="$ua.deviceType() !== 'pc'")
+    a(href="https://t.afi-b.com/visit.php?guid=ON&a=Y9306j-J315373G&p=s687592m" target="_blank" rel="noopener nofollow")
+      img(src="https://www.afi-b.com/upload_image/9306-1519773417-3.gif" width="468" height="60" style="border:none;" alt="with（ウィズ）")
+    img(src="https://t.afi-b.com/lead/Y9306j/s687592m/J315373G" width="1" height="1" style="border:none;" alt="with（ウィズ）")
+  .start_with(v-else)
     a(href="https://t.afi-b.com/visit.php?guid=ON&a=Y9306j-J315373G&p=s687592m" target="_blank" rel="noopener nofollow")
       img(src="https://www.afi-b.com/upload_image/9306-1519773417-3.gif" width="468" height="60" style="border:none;" alt="with（ウィズ）")
     img(src="https://t.afi-b.com/lead/Y9306j/s687592m/J315373G" width="1" height="1" style="border:none;" alt="with（ウィズ）")
   .app_info3 
     b withをやろうと思うけどどれぐらい料金がかかるの？
     .info3
-      no-ssr
-        lazy-component
-          img(src="../../static/with/plan.png", alt="料金について1",v-if="$ua.deviceType() !== 'pc'",class="payment_not_pc scale_image")
-          img(src="../../static/with/plan.png", alt="料金について1",v-else-if="$ua.deviceType() === 'pc'",class="scale_image")
-      no-ssr
-        lazy-component
-          img(src="../../static/with/point.png", alt="料金について2",v-if="$ua.deviceType() !== 'pc'",class="payment_not_pc scale_image")
-          img(src="../../static/with/point.png", alt="料金について2",v-else-if="$ua.deviceType() === 'pc'",class="scale_image")
+      img(src="../../static/with/plan.png", alt="料金について1",v-if="$ua.deviceType() !== 'pc'",class="payment_not_pc scale_image" width="400" height="400")
+      img(src="../../static/with/plan.png", alt="料金について1",v-else-if="$ua.deviceType() === 'pc'",class="scale_image" width="400" height="460")
+      img(src="../../static/with/point.png", alt="料金について2",v-if="$ua.deviceType() !== 'pc'",class="payment_not_pc scale_image" width="460" height="400")
+      img(src="../../static/with/point.png", alt="料金について2",v-else-if="$ua.deviceType() === 'pc'",class="scale_image" width="400" height="460")
   .add_info3
     p 基本的には男性が有料、女性が無料となっています。
     p 料金については上の画像の通りですが、
@@ -250,10 +234,8 @@ main.container
       p.red まずはお試しでという方は3ヶ月、しっかり相手を見つけるまでやりたい！という方には6ヶ月がおすすめです！
   span.plan2.plan ・VIPオプションについて
     .plan2_info
-      no-ssr
-        lazy-component
-          img(src="../../static/with/plan.png", alt="料金について1",v-if="$ua.deviceType() !== 'pc'",class="payment_not_pc")
-          img(src="../../static/with/plan.png", alt="料金について1",v-else-if="$ua.deviceType() === 'pc'" style="max-width:50%;padding-bottom:20px;")
+      img(src="../../static/with/plan.png", alt="料金について1",v-if="$ua.deviceType() !== 'pc'",class="payment_not_pc" width="460" height="400")
+      img(src="../../static/with/plan.png", alt="料金について1",v-else-if="$ua.deviceType() === 'pc'" style="padding-bottom:20px;" width="460" height="400")
       .plan2_info1 
         | VIPオプションとは通常の有料会員のサービスに加えて追加で利用できるサービスのことです。<br>
         | VIPオプションを購入すると以下の特典が使えるようになります。
@@ -296,10 +278,14 @@ main.container
     p.pink 金額としてはPairsがやはり最安だとは思いますが、Pairsよりもレベルの高い女性が多い印象があるのでせっかく課金をするなら私としてはwithの方をおすすめします。
     p 気になっている方は一度使ってみることを是非おすすめします！
   .start_with_text ↓ withを始める ↓
-  .start_with
+  .start_with_not_pc(v-if="$ua.deviceType() !== 'pc'")
     a(href="https://t.afi-b.com/visit.php?guid=ON&a=Y9306j-J315373G&p=s687592m" target="_blank" rel="noopener nofollow")
       img(src="https://www.afi-b.com/upload_image/9306-1519773417-3.gif" width="468" height="60" style="border:none;" alt="with（ウィズ）")
-    img(src="https://t.afi-b.com/lead/Y9306j/s687592m/J315373G" width="1" height="1" style="border:none;" alt="with（ウィズ）")    
+    img(src="https://t.afi-b.com/lead/Y9306j/s687592m/J315373G" width="1" height="1" style="border:none;" alt="with（ウィズ）")
+  .start_with(v-else)
+    a(href="https://t.afi-b.com/visit.php?guid=ON&a=Y9306j-J315373G&p=s687592m" target="_blank" rel="noopener nofollow")
+      img(src="https://www.afi-b.com/upload_image/9306-1519773417-3.gif" width="468" height="60" style="border:none;" alt="with（ウィズ）")
+    img(src="https://t.afi-b.com/lead/Y9306j/s687592m/J315373G" width="1" height="1" style="border:none;" alt="with（ウィズ）")
   
 </template>
 
@@ -315,9 +301,11 @@ export default {
   head () {
     return {
       meta: [
-        { charset: 'utf-8' },
         { hid: 'description', name: 'description', content: 'マッチングアプリwithを実際に使ってみて本当に会えるのかをレビューします。またwithとはどのようなサービスなのか、どういうコンテンツがあるのか、強みは何かも合わせて紹介していきます！' },
         { name: 'keywords', content: 'マッチングアプリ,with,レビュー,出会い,婚活'},
+      ],
+      link: [
+        { rel: 'canonical', href: 'https://matching-app-review.xyz/categories/with'}
       ],
       title: 'マッチングアプリwithを実際に使ってのレビュー、本当に会えるの？',
     }
@@ -339,264 +327,3 @@ export default {
   }
 }
 </script>
-
-<style scoped lang="scss">
-.container {
-  width: 90%;
-  margin: auto;
-  .main_img img {
-    max-width: 100%;
-  }
-  .app_movie_wrap {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    .app_movie1,.app_movie2 {
-      max-width:50%;
-      img {
-        width:80%;
-      }
-    }
-  }
-  .subsubtitle {
-    font-size: 24px;
-    color:#35495e;
-    text-align: center;
-  }
-  .app_info1,.app_info2,.app_info3,.app_info4,.app_info5 {
-    text-align:left;
-    font-size: 20px;
-  }
-  .add_info4 {
-    margin-top:50px;
-    .review_type_text {
-      display:block;
-    }
-    .user_review_summary_content {
-      padding: 10px 30px;
-    }
-    .good_review .review_type_text {
-      color:#5555c6;
-    }
-    .bad_review .review_type_text {
-      color:#ff2020;
-    }
-    .good_review_style,.bad_review_style {
-      position: relative;
-      padding: 20px;
-      margin: 2em 0;
-      color: #000;
-      line-height:2.0;
-      display:inline-block;
-    }
-    .good_review_style {
-      background: #e6f4ff;
-    }
-    .bad_review_style {
-      background: #ffefef;
-    }
-    .good_review_style:after,.bad_review_style:after {
-      position: absolute;
-      content: '';
-      top: 100%;
-      border: 15px solid transparent;
-      width: 0;
-      height: 0;
-    }
-    .good_review_style:after {
-      left: 30px;
-      border-top: 15px solid #e6f4ff;
-    }
-    .bad_review_style:after {
-      right: 30px;
-      border-top: 15px solid #ffefef;
-    }
-    .review_title {
-      font-weight:bold;
-    }
-    .star {
-      color:#ffd22c;
-    }
-  }
-  .add_info5 {
-    padding:20px;
-  }
-  .app_info1 {
-    margin-top:50px;
-  }
-  .about_with_not_pc {
-    text-align:center;
-  }
-  .start_with_not_pc {
-    width:100% !important;
-    text-align:center;
-  }
-  .start_with_btn_not_pc {
-    max-width: 100%;
-    width : auto !important;
-  }
-  .with_logo_not_pc,.secure_not_pc,.payment_not_pc {
-    padding-right:0px !important;
-  }
-  .secure_not_pc {
-    margin: 5px;
-  }
-  .payment_not_pc {
-    height:auto !important;
-    max-width: 100%;
-  }
-  .plan2_not_pc {
-    justify-content: center !important;
-    flex-wrap: wrap;
-    width:auto !important;
-    max-width: 100%;
-  }
-  .info1,.info2,.info3 {
-    display: flex;
-    justify-content: center;
-    padding-top: 50px;
-    flex-wrap: wrap;
-    img {
-      height: 203px;
-      padding-right: 50px;
-      max-width:100%;
-    }
-    .scale_image {
-      transition-duration: 0.5s;
-    }
-    .scale_image:hover {
-      transform: scale(2.0,2.0); /*画像の拡大*/
-    }
-    blockquote {
-      padding: 0.5em 1em;
-      border: double 5px #F4636C;
-      font-size:17px;
-      margin:0px;
-    }
-  }
-  .app_info2 {
-    margin-bottom:50px;
-  }
-  .add_info1,.add_info2 {
-    margin-bottom: 50px;
-    ul, ol {
-      background: #fff1f2;
-      box-shadow: 0px 0px 0px 10px #fff1f2;/*線の外側*/
-      border: dashed 2px #F4636C;/*破線*/
-      border-radius: 9px;
-      margin-left: 10px;/*はみ出ないように調整*/
-      margin-right: 10px;/*はみ出ないように調整*/
-      padding: 0.5em 0.5em 0.5em 2em;
-    }
-    ul li, ol li {
-      line-height: 1.5;
-      padding: 0.5em 0;
-    }
-    span {
-      font-weight: bold;
-      p {
-        font-weight:normal;
-      }
-    }
-  }
-  .add_info3 {
-    .plan {
-      font-size:17px;
-      font-weight:bold;
-    }
-    .plan1_info,.plan2_info,.plan3_info {
-      padding: 20px;
-    }
-    .plan2_info1,.plan3_info1 {
-      margin: 20px 0px;
-    }
-    .plan2_summary {
-      font-weight:bold;
-    }
-    .plan3_info1 {
-      font-weight:normal;
-    }
-    .plan2_wrapper {
-      display:inline-block;
-      .plan2_info2,.plan2_info3 {
-        display: flex;
-        justify-content: left;
-      }
-    }
-    .plan1_info,.plan3_info2,.plan3_info3,.plan3_info4,.plan3_info5 {
-      font-weight:bold;
-      margin: 2em 0em;
-      padding: 1em;
-      max-width: 100%;
-      background-color: #fff; /* 背景色 */
-      border: 1px solid #ccc; /* 枠線 */
-      p {
-        font-weight:normal;
-      }
-    }
-    .plan2_info2,.plan2_info3,.plan2_info4,.plan2_info5,.plan2_info6,.plan2_info7 {
-      font-weight:bold;
-      margin: 2em 0em;
-      padding: 1em;
-      width: 100%;
-      background-color: #fff; /* 背景色 */
-      border: 1px solid #ccc; /* 枠線 */
-      p {
-        font-weight:normal;
-      }
-      table{
-        width: 100%;
-        border-collapse: collapse;
-        border-spacing: 0;
-      }
-      table th,table td{
-        padding: 10px 0;
-        text-align: center;
-        font-weight:normal;
-      }
-      table tr:nth-child(odd){
-        background-color: #eee
-      }
-    }
-  }
-  .red {
-    color: red;
-    font-weight: bold !important;
-  }
-  .pink {
-    color: #F4636C;
-    font-weight: bold !important;
-  }
-  .start_with_text {
-    font-size:20px;
-    font-weight:bold;
-    color: #F4636C;
-    text-align:center;
-  }
-  .start_with {
-    width:500px;
-    max-width:86%;
-    height:70px;
-    position: relative;
-    text-align:center;
-    padding: 0.5em 1em;
-    margin: 2em auto;
-    color: #F4636C;
-    background: #fff1f2;
-    border-top: #F4636C;
-    box-shadow: 0 3px 4px rgba(0, 0, 0, 0.32);
-    a {
-      display: block;
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      img {
-        padding-top: 13px;
-        max-width:100%;
-      }
-    }
-  }
-}
-</style>

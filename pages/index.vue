@@ -90,7 +90,7 @@
     p 使ってみて思ったことはアプリごとに特徴があって、中々やりとりして会うまでは大変だなーということです。
     p もちろん相手を選ばないなら必然的に数は増えると思いますが過去の経験があるので少し慎重になっています笑
     p 
-      b ※2019/06/02更新
+      b ※2019/06/16更新
     table.main_table
       tbody
         tr
@@ -133,7 +133,7 @@
         p 
           b 今すぐYYCを使ってみる↓
         p: a(href="http://www.yyc.co.jp/af/9112cb3b/", target="_blank")
-          img(src="../static/omiai/yycbnr.jpg", width="320px",alt="yycバナー")
+          img(src="../static/omiai/yycbnr.jpg", width="320px", height="52px", alt="yycバナー")
     h2: a(name="introduce") 実際に出会えたアプリ紹介
     p ※更新準備中です
 </template>
@@ -143,85 +143,14 @@ export default {
   head () {
     return {
       meta: [
-        { charset: 'utf-8' },
         { hid: 'description', name: 'description', content: 'YYCやwith、omial、Pairs、ハッピーメールなどのマッチングアプリを実際に使ってみた体験談を元に会えるアプリ、会えないアプリを紹介します！' },
         { name: 'keywords', content: 'マッチングアプリ,YYC,with,Omiai,Pairs'},
+      ],
+      link: [
+        { rel: 'canonical', href: 'https://matching-app-review.xyz/'}
       ],
       title: 'マッチングアプリwithを実際に使ってのレビュー、本当に会えるの？',
     }
   }
 }
 </script>
-
-<style>
-.container {
-  width: 80%;
-  margin: 0 auto;
-}
-.index_list {
-  padding: 0.5em 1em;
-  margin: 2em 0;
-  background: #f0f7ff;
-  border: dashed 2px #5b8bd0;/*点線*/
-}
-.main_table {
-  border-collapse: collapse;
-  border-spacing: 0;
-  width: 100%;
-}
-
-.main_table tr{
-  border-bottom: solid 1px #eee;
-  cursor: pointer;
-}
-
-.main_table tr:hover{
-  background-color: #d4f0fd;
-}
-
-.main_table th,.main_table td{
-  text-align: center;
-  width: 25%;
-  padding: 15px 0;
-}
-
-.main_table td.icon{
-  background-size: 35px;
-  background-position: left 5px center;
-  background-repeat: no-repeat;
-  padding-left: 30px;
-}
-
-.main_table td.icon.yyc{
-  background-image: url(../static/omiai/yycbnr2.png)
-}
-
-.main_table td.icon.with{
-  
-}
-
-table td.icon.omiai{
-  
-}
-
-.main_table td.icon.happymail{
-  background-image: url(https://img.happymail.co.jp/img/pc_s_ms/100_100a.gif)
-}
-
-table td.icon.pairs{
-  
-}
-.banner-area {
-  display:inline-block;
-}
-.banner1 {
-  display:inline-block;
-}
-.banner2 {
-  display:inline-block;
-  margin-left:10px;
-}
-.banner-area p {
-  text-align:center;
-}
-</style>
