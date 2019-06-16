@@ -65,6 +65,7 @@ export default {
   modules: [
     [
       'nuxt-user-agent',
+      '@nuxtjs/sitemap',
       '@nuxtjs/google-gtag',
       {
         id: 'UA-104918236-3', //あなたのGoogleアナリティクスのプロパティID
