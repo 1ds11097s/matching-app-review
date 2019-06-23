@@ -66,10 +66,11 @@ export default {
     [
       'nuxt-user-agent',
       '@nuxtjs/sitemap',
+      '@/modules/hook/generate',
       '@nuxtjs/google-gtag',
       {
         id: 'UA-104918236-3', //あなたのGoogleアナリティクスのプロパティID
-        debug: true //本番環境以外でもGAを有効にしたい場合はtrueに。
+        debug: false //本番環境以外でもGAを有効にしたい場合はtrueに。
       }
     ]
   ],
