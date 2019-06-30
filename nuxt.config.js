@@ -66,14 +66,14 @@ export default {
   modules: [
     [
       'nuxt-user-agent',
-      '@nuxtjs/sitemap',
       '@/modules/hook/generate',
       '@nuxtjs/google-gtag',
       {
         id: 'UA-104918236-3', //あなたのGoogleアナリティクスのプロパティID
         debug: false //本番環境以外でもGAを有効にしたい場合はtrueに。
       }
-    ]
+    ],
+    ['@nuxtjs/sitemap']
   ],
 
   hooks: {
@@ -84,6 +84,17 @@ export default {
     'render:route': (url, page, { req, res }) => {
       page.html = modifyHtml(page.html)
     }
+  },
+
+  sitemap: {
+    path: '/sitemap.xml',
+    hostname: 'https://matching-app-review.xyz/',
+    generate: true,
+    exclude: [
+      '/admin'
+    ],
+    routes: [
+    ]
   },
 
   /*
