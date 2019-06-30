@@ -76,8 +76,11 @@ export default {
   ],
 
   hooks: {
+    'generate:page': (page) => {
+      page.html = modifyHtml(page.html)
+    },
     // This hook is called before rendering the html to the browser
-    'render:route': (url, page) => {
+    'render:route': (url, page, { req, res }) => {
       page.html = modifyHtml(page.html)
     }
   },
