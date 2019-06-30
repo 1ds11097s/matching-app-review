@@ -7,6 +7,7 @@ const modifyHtml = (html) => {
   html = html.replace(/<style data-vue-ssr/g, '<style amp-custom data-vue-ssr')
   html = html.replace(/<\/style><style amp-custom data-vue-ssr-id="406f0688:0">@charset "UTF-8";/g, '')
   html = html.replace(/<style amp-custom data-vue-ssr-id="b15e4592:0">@charset "UTF-8";/g, '<style amp-custom data-vue-ssr-id="b15e4592:0">')
+  html = html.replace(/@charset "UTF-8";/g, '')
   // Remove every script tag from generated HTML
   html = html.replace(/<script\b[^<]*(?:(?!<\/script>)<[^<]*)*<\/script>/gi, '')
 
