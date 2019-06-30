@@ -1,5 +1,14 @@
 <template lang="pug">
   main.container
+    .main_img
+      .top_image
+        a(href="/categories/with")
+          img(src="../static/with/main.jpg", alt="メイン画像" width="300" height="160" class="image-space")
+        b withのレビューはこちら↑
+      .top_image
+        a(href="/categories/Omiai")
+          img(src="../static/omiai/main.png", alt="メイン画像" width="300" height="160" class="image-space")
+        b Omiaiのレビューはこちら↑
     p こんにちは！管理人のゆうと申します！
     p 当サイトはマッチングアプリを使ってみて本当に会えるアプリはあるのか？
     p 会えるならどのアプリが会えるのかを私自身の体験談を元に紹介していくサイトです。

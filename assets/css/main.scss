@@ -21,6 +21,23 @@ h1, h2, h3 {
 .page_title_not_pc {
   font-size:22px;
 }
+.image-space {
+  margin: 10px 10px 0 10px;
+}
+.top_image {
+  flex-direction: column; /* 子要素をflexboxにより縦方向に揃える */
+  justify-content: center; /* 子要素をflexboxにより中央に配置する */
+  align-items: center;
+  display:flex;
+}
+
+.container {
+  .main_img {
+    display: flex;
+    flex-direction: row;  
+    flex-wrap: wrap; 
+  }
+}
 
 //index
 .container {
