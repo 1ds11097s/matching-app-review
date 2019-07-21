@@ -20,7 +20,8 @@ const modifyHtml = (html) => {
   const ampYoutube = '<script async custom-element="amp-youtube" src="https://cdn.ampproject.org/v0/amp-youtube-0.1.js"></script>'
   const ampScript = '<script async src="https://cdn.ampproject.org/v0.js"></script>'
   const ampSocial = '<script async custom-element="amp-social-share" src="https://cdn.ampproject.org/v0/amp-social-share-0.1.js"></script>'
-  html = html.replace('</head>', ampScript + ampBoilerplate + ampSocial + ampYoutube + '</head>')
+  const ampAnalytics = '<script async custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>'
+  html = html.replace('</head>', ampAnalytics + ampScript + ampBoilerplate + ampSocial + ampYoutube + '</head>')
   return html
 }
 
@@ -65,16 +66,11 @@ export default {
   */
   modules: [
     [
-      'nuxt-user-agent',
-      '@/modules/hook/generate',
-      '@nuxtjs/google-gtag',
-      {
-        id: 'UA-104918236-3', //あなたのGoogleアナリティクスのプロパティID
-        debug: false //本番環境以外でもGAを有効にしたい場合はtrueに。
-      }
+      'nuxt-user-agent'
     ],
     ['@nuxtjs/sitemap']
   ],
+  
 
   hooks: {
     'generate:page': (page) => {
