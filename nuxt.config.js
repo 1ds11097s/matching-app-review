@@ -1,6 +1,12 @@
 import pkg from './package'
 
 const modifyHtml = (html) => {
+  html = html.replace(/<div data-server-rendered="true" id="__nuxt">/g,
+     `<amp-analytics type="googleanalytics" id="analytics1">
+     <script type="application/json">
+     {"vars": {"account": "UA-104918236-3"},
+     "triggers": {"trackPageview" : {"on": "visible","request": "pageview"}}
+      }</script></amp-analytics><div data-server-rendered="true" id="__nuxt">`)
   // Add amp-custom tag to added CSS
   html = html.replace(/<\/style><style data-vue-ssr-id="aab9a468:0">/g, ``)
   html = html.replace(/<\/style><style data-vue-ssr-id="17cfdfa9:0">/g, ``)
@@ -66,7 +72,7 @@ export default {
   */
   modules: [
     [
-      'nuxt-user-agent'
+      'nuxt-user-agent',
     ],
     ['@nuxtjs/sitemap']
   ],
