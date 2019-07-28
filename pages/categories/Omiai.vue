@@ -20,10 +20,13 @@ main.container
     p また、2019年4月の時点では既に会員数は400万人を超えるかなり大手のサービスとなっています。
     p マッチングサービスを使う人なら一度は利用したことがあることが多く、また利用をお勧めできるサービスです。
     p また、多数のメディアにも紹介されておりそれがまた信頼につながっている一つの理由となっています。
-  .start_omiai(v-if="$ua.deviceType() !== 'pc'", class="start_omiai_not_pc")
-    a(href="#",class="btn-square-shadow start_omiai_btn_not_pc") Omiaiを始める
-  .start_omiai(v-else-if="$ua.deviceType() === 'pc'")
-    a(href="#",class="btn-square-shadow") Omiaiを始める
+  .start_omiai_text ↓ Omiaiを始める ↓
+  .start_omiai_not_pc(v-if="$ua.deviceType() !== 'pc'")
+    a(href="https://t.afi-b.com/visit.php?guid=ON&a=R100461-L337044D&p=s687592m" target="_blank" rel="nofollow")
+      img(src="https://www.afi-b.com/upload_image/10046-1530825205-3.png" width="320" height="50" style="border:none;" alt="【Omiai -オミアイ-】")
+  .start_omiai(v-else)
+    a(href="https://t.afi-b.com/visit.php?guid=ON&a=R100461-L337044D&p=s687592m" target="_blank" rel="nofollow")
+      img(src="https://www.afi-b.com/upload_image/10046-1530825205-3.png" width="320" height="50" style="border:none;" alt="【Omiai -オミアイ-】")
   .app_info2
     b なぜOmiaiが安全・安心なのか？
     .info2
@@ -131,10 +134,13 @@ main.container
         p 使う地域によるかもしれませんが私の住んでいる福岡ではかなり可愛い女性も沢山登録しています。
         p 結論としては実際に使ってみないと何もわからないので1度自身で利用してみることをオススメします。
         p そこでOmiaiというサービスが自身に会うか会わないか判断していただければよいのではないでしょうか？
-  .start_omiai(v-if="$ua.deviceType() !== 'pc'", class="start_omiai_not_pc")
-    a(href="#",class="btn-square-shadow start_omiai_btn_not_pc") Omiaiを始める
-  .start_omiai(v-else-if="$ua.deviceType() === 'pc'")
-    a(href="#",class="btn-square-shadow") Omiaiを始める
+  .start_omiai_text ↓ Omiaiを始める ↓
+  .start_omiai_not_pc(v-if="$ua.deviceType() !== 'pc'")
+    a(href="https://t.afi-b.com/visit.php?guid=ON&a=R100461-L337044D&p=s687592m" target="_blank" rel="nofollow")
+      img(src="https://www.afi-b.com/upload_image/10046-1530825205-3.png" width="320" height="50" style="border:none;" alt="【Omiai -オミアイ-】")
+  .start_omiai(v-else)
+    a(href="https://t.afi-b.com/visit.php?guid=ON&a=R100461-L337044D&p=s687592m" target="_blank" rel="nofollow")
+      img(src="https://www.afi-b.com/upload_image/10046-1530825205-3.png" width="320" height="50" style="border:none;" alt="【Omiai -オミアイ-】")
   .app_info3 
     b Omiaiをやろうと思うけどどれぐらい料金がかかるの？
     .info3
@@ -159,10 +165,13 @@ main.container
       p 1ヶ月だとなかなかいい相手が見つからないまま終わってしまう可能性が高いです。
       p 逆に12ヶ月だと途中でやらなくなって無駄に払い続けるといったことになりやすいです。
       p.red まずはお試しでという方は3ヶ月、しっかり相手を見つけるまでやりたい！という方には6ヶ月がおすすめです！
-    .start_omiai(v-if="$ua.deviceType() !== 'pc'", class="start_omiai_not_pc")
-      a(href="#",class="btn-square-shadow start_omiai_btn_not_pc") Omiaiを始める
-    .start_omiai(v-else-if="$ua.deviceType() === 'pc'")
-      a(href="#",class="btn-square-shadow") Omiaiを始める
+    .start_omiai_text ↓ Omiaiを始める ↓
+      .start_omiai_not_pc(v-if="$ua.deviceType() !== 'pc'")
+        a(href="https://t.afi-b.com/visit.php?guid=ON&a=R100461-L337044D&p=s687592m" target="_blank" rel="nofollow")
+          img(src="https://www.afi-b.com/upload_image/10046-1530825205-3.png" width="320" height="50" style="border:none;" alt="【Omiai -オミアイ-】")
+      .start_omiai(v-else)
+        a(href="https://t.afi-b.com/visit.php?guid=ON&a=R100461-L337044D&p=s687592m" target="_blank" rel="nofollow")
+          img(src="https://www.afi-b.com/upload_image/10046-1530825205-3.png" width="320" height="50" style="border:none;" alt="【Omiai -オミアイ-】")
     span.plan2.plan ・プレミアムパックについて
     .plan2_info
       img(src="../../static/omiai/payment1.png", alt="料金について1",v-if="$ua.deviceType() !== 'pc'",class="payment_not_pc" width="250" height="200")
@@ -313,10 +322,13 @@ main.container
           p Omiaiポイントを2-8ポイント消費して検索結果の上位に表示されやすくなります。<br>
             | まず相手に見てもらわないといいね！をもらえないのでマッチングしやすくなる有効な方法1つとなります。<br>
             | ただし、ハイライト表示はアプリ版のみの機能でPC版にはありません。
-  .start_omiai(v-if="$ua.deviceType() !== 'pc'", class="start_omiai_not_pc")
-    a(href="#",class="btn-square-shadow start_omiai_btn_not_pc") Omiaiを始める
-  .start_omiai(v-else-if="$ua.deviceType() === 'pc'")
-    a(href="#",class="btn-square-shadow") Omiaiを始める
+  .start_omiai_text ↓ Omiaiを始める ↓
+  .start_omiai_not_pc(v-if="$ua.deviceType() !== 'pc'")
+    a(href="https://t.afi-b.com/visit.php?guid=ON&a=R100461-L337044D&p=s687592m" target="_blank" rel="nofollow")
+      img(src="https://www.afi-b.com/upload_image/10046-1530825205-3.png" width="320" height="50" style="border:none;" alt="【Omiai -オミアイ-】")
+  .start_omiai(v-else)
+    a(href="https://t.afi-b.com/visit.php?guid=ON&a=R100461-L337044D&p=s687592m" target="_blank" rel="nofollow")
+      img(src="https://www.afi-b.com/upload_image/10046-1530825205-3.png" width="320" height="50" style="border:none;" alt="【Omiai -オミアイ-】")
   .app_info5 
     b Omiaiを使用してみた感想
   .add_info5
@@ -330,10 +342,13 @@ main.container
     p 今後も継続して使っていけば会える手ごたえは間違いなくあるのでその時は体験談として報告をしたいと思います。
     p 別のサービスとも比較をして記事を投稿していきたいと思いますが今の時点ではOmiaiは多くあるマッチングサービスの中では比較的上位に来るようなサービスだと思います。
     p 気になった方は1度利用してみることをオススメできるサービスと言えると思います。
-  .start_omiai(v-if="$ua.deviceType() !== 'pc'", class="start_omiai_not_pc")
-    a(href="#",class="btn-square-shadow start_omiai_btn_not_pc") Omiaiを始める
-  .start_omiai(v-else-if="$ua.deviceType() === 'pc'")
-    a(href="#",class="btn-square-shadow") Omiaiを始める
+  .start_omiai_text ↓ Omiaiを始める ↓
+  .start_omiai_not_pc(v-if="$ua.deviceType() !== 'pc'")
+    a(href="https://t.afi-b.com/visit.php?guid=ON&a=R100461-L337044D&p=s687592m" target="_blank" rel="nofollow")
+      img(src="https://www.afi-b.com/upload_image/10046-1530825205-3.png" width="320" height="50" style="border:none;" alt="【Omiai -オミアイ-】")
+  .start_omiai(v-else)
+    a(href="https://t.afi-b.com/visit.php?guid=ON&a=R100461-L337044D&p=s687592m" target="_blank" rel="nofollow")
+      img(src="https://www.afi-b.com/upload_image/10046-1530825205-3.png" width="320" height="50" style="border:none;" alt="【Omiai -オミアイ-】")
 </template>
 
 <script>
@@ -349,7 +364,7 @@ export default {
       link: [
         { rel: 'canonical', href: 'https://matching-app-review.xyz/categories/Omiai'}
       ],
-      title: 'マッチングアプリOmiaiを実際に使ってのレビュー、本当に会えるの？',
+      title: '【2019年7月更新】マッチングアプリOmiaiを実際に使ってのレビュー、本当に会えるの？',
     }
   },
   components: {
@@ -583,27 +598,63 @@ export default {
     color: red;
     font-weight: bold;
   }
+  // .start_omiai {
+  //   width:330px;
+  //   margin: 20px auto;
+  //   .btn-square-shadow {
+  //     display: inline-block;
+  //     padding: 0.5em 1em;
+  //     text-decoration: none;
+  //     background: #668ad8;/*ボタン色*/
+  //     color: #FFF;
+  //     border-bottom: solid 4px #627295;
+  //     border-radius: 3px;
+  //     width: 80%;
+  //     text-align: center;
+  //     letter-spacing: 10px;
+  //   }
+  //   .btn-square-shadow:active {
+  //     /*ボタンを押したとき*/
+  //     -webkit-transform: translateY(4px);
+  //     transform: translateY(4px);/*下に動く*/
+  //     box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.2);/*影を小さく*/
+  //     border-bottom: none;
+  //   }
+  // }
+  .start_omiai_text {
+    font-size:20px;
+    font-weight:bold;
+    color: #3F9AD1;
+    text-align:center;
+  }
   .start_omiai {
-    width:330px;
-    margin: 20px auto;
-    .btn-square-shadow {
-      display: inline-block;
-      padding: 0.5em 1em;
-      text-decoration: none;
-      background: #668ad8;/*ボタン色*/
-      color: #FFF;
-      border-bottom: solid 4px #627295;
-      border-radius: 3px;
-      width: 80%;
-      text-align: center;
-      letter-spacing: 10px;
-    }
-    .btn-square-shadow:active {
-      /*ボタンを押したとき*/
-      -webkit-transform: translateY(4px);
-      transform: translateY(4px);/*下に動く*/
-      box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.2);/*影を小さく*/
-      border-bottom: none;
+    height:70px;
+  }
+  .start_omiai_not_pc {
+    height:50px;
+  }
+  .start_omiai,.start_omiai_not_pc {
+    width:500px;
+    max-width:86%;
+    position: relative;
+    text-align:center;
+    padding: 0.5em 1em;
+    margin: 2em auto;
+    color: #3F9AD1;
+    background: #B8DBF3;
+    border-top: #3F9AD1;
+    box-shadow: 0 3px 4px rgba(0, 0, 0, 0.32);
+    a {
+      display: block;
+      position: absolute;
+      top: 10px;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      amp-img {
+        padding-top: 13px;
+        max-width:80%;
+      }
     }
   }
 }

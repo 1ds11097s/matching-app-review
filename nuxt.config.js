@@ -16,7 +16,6 @@ const modifyHtml = (html) => {
   html = html.replace(/@charset "UTF-8";/g, '')
   // Remove every script tag from generated HTML
   html = html.replace(/<script\b[^<]*(?:(?!<\/script>)<[^<]*)*<\/script>/gi, '')
-
   html = html.replace(/<html/gi, '<html ⚡')
   html = html.replace(/<img([^>]*)>/gi, (match, sub) => {
     return `<amp-img ${sub} layout=intrinsic></amp-img>`

@@ -307,7 +307,7 @@ export default {
       link: [
         { rel: 'canonical', href: 'https://matching-app-review.xyz/categories/with'}
       ],
-      title: 'マッチングアプリwithを実際に使ってのレビュー、本当に会えるの？',
+      title: '【2019年7月更新】マッチングアプリwithを実際に使ってのレビュー、本当に会えるの？',
     }
   },
   components: {
